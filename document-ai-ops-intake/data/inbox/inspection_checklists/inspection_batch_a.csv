@@ -1,0 +1,7 @@
+document_id,event_date,asset_id,site,priority,issue_category,failure_description,recommended_action,status
+IN-3001,2026-07-02,PMP-210,RIO,high,inspection,Thermography found hot coupling area.,Schedule vibration route and thermal follow-up.,open
+IN-3002,2026-07-03,TK-120,SSA,low,inspection,No abnormality detected. Routine compliance check.,Close checklist and archive evidence.,closed
+IN-3003,2026-07-04,CMP-115,MCZ,medium,inspection,Air line moisture above expected range.,Inspect dryer and drain schedule.,open
+IN-3004,2026-07-05,VLV-332,SSA,medium,instrumentation,Signal fluctuation during travel test.,Inspect cabling and calibration setup.,open
+IN-3005,2026-07-06,,VIX,medium,inspection,Missing asset reference in checklist.,Review document before intake approval.,open
+IN-3006,2026-07-07,GEN-808,MCZ,high,electrical,Starter test failed due to voltage drop.,Prioritize battery replacement.,open

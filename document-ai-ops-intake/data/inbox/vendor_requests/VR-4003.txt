@@ -1,0 +1,11 @@
+Subject: Service Request VR-4003 for PMP-455
+Request Date: 2026-07-07
+Required By: 
+Site: RIO
+Priority: medium
+Vendor: 
+Category: vendor_support
+Details: Need quote for repainting and coating touch-up.
+Requested Action: Request vendor and approval path.
+Estimated Cost: 1800
+Status: approved

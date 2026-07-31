@@ -1,0 +1,13 @@
+Work Order: WO-1008
+Asset ID: TK-120
+Asset Name: Storage Tank 12
+Site: SSA
+Request Date: 2026-07-09
+Priority: medium
+Category: inspection
+Requester: Julio Moreira
+Failure Description: Level gauge verification requested before audit.
+Recommended Action: Perform inspection and record calibration evidence.
+Estimated Cost: 800
+Downtime Hours: 1.0
+Status: approved

@@ -1,0 +1,13 @@
+Work Order: WO-1006
+Asset ID: PMP-455
+Asset Name: Transfer Pump B
+Site: RIO
+Request Date: 2026-07-07
+Priority: low
+Category: inspection
+Requester: Luciana Alves
+Failure Description: Routine inspection created for small casing paint damage.
+Recommended Action: Schedule coating touch-up in next maintenance window.
+Estimated Cost: 350
+Downtime Hours: 0.0
+Status: closed

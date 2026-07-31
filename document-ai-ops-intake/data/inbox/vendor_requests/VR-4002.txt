@@ -1,0 +1,11 @@
+Subject: Service Request VR-4002 for GEN-808
+Request Date: 2026-07-06
+Required By: 2026-07-10
+Site: MCZ
+Priority: critical
+Vendor: PowerCore
+Category: vendor_support
+Details: Need urgent delivery of startup battery modules.
+Requested Action: Expedite vendor response and reserve test team.
+Estimated Cost: 9400
+Status: open

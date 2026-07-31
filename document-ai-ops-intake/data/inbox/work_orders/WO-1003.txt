@@ -1,0 +1,13 @@
+Work Order: WO-1003
+Asset ID: VLV-332
+Asset Name: Control Valve 7
+Site: SSA
+Request Date: 2026-07-04
+Priority: medium
+Category: instrumentation
+Requester: Ana Beatriz
+Failure Description: Position feedback inconsistent with local indicator.
+Recommended Action: Recalibrate positioner and inspect signal wiring.
+Estimated Cost: 1600
+Downtime Hours: 1.5
+Status: open

@@ -1,0 +1,11 @@
+Subject: Service Request VR-4001 for HTX-901
+Request Date: 2026-07-05
+Required By: 2026-07-08
+Site: RIO
+Priority: high
+Vendor: ThermoServ
+Category: vendor_support
+Details: Requesting cleaning contractor mobilization for exchanger fouling.
+Requested Action: Confirm availability and quote window.
+Estimated Cost: 12500
+Status: pending_vendor

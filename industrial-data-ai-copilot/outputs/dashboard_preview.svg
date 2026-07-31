@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <defs>
+    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#1665ad"/>
+    </linearGradient>
+    <style>
+      .title { font: 800 38px 'Segoe UI', Arial, sans-serif; fill: white; }
+      .subtitle { font: 400 18px 'Segoe UI', Arial, sans-serif; fill: #dcecff; }
+      .label { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #5f6b7a; letter-spacing: 1px; }
+      .metric { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: #102033; }
+      .section { font: 800 24px 'Segoe UI', Arial, sans-serif; fill: #102033; }
+      .asset { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #102033; }
+      .score { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #5f6b7a; }
+    </style>
+  </defs>
+  <rect width="1200" height="620" fill="#eef3f8"/>
+  <rect x="40" y="38" width="1120" height="126" rx="24" fill="url(#hero)"/>
+  <text x="72" y="90" class="title">Industrial Data &amp; AI Copilot - Predictive Maintenance Analytics</text>
+  <text x="72" y="126" class="subtitle">Bronze/Silver/Gold pipeline · data quality checks · risk scoring · AI-style work-order briefs</text>
+  <rect x="60" y="186" width="1080" height="376" rx="22" fill="white" stroke="#d9e4ef"/>
+  <text x="72" y="220" class="section">Equipment health summary</text>
+  
+  <text x="72" y="210" class="asset">PUMP-101 - Primary Transfer Pump</text>
+  <rect x="72" y="226" width="500" height="18" rx="9" fill="#e7edf4"/>
+  <rect x="72" y="226" width="500" height="18" rx="9" fill="#b42318"/>
+  <text x="595" y="240" class="score">100/100 · critical · 33 anomalies · 1 open WOs</text>
+
+  <text x="72" y="282" class="asset">COMP-201 - Gas Compressor</text>
+  <rect x="72" y="298" width="500" height="18" rx="9" fill="#e7edf4"/>
+  <rect x="72" y="298" width="500" height="18" rx="9" fill="#b42318"/>
+  <text x="595" y="312" class="score">100/100 · critical · 15 anomalies · 1 open WOs</text>
+
+  <text x="72" y="354" class="asset">GEN-401 - Backup Generator</text>
+  <rect x="72" y="370" width="500" height="18" rx="9" fill="#e7edf4"/>
+  <rect x="72" y="370" width="345" height="18" rx="9" fill="#b54708"/>
+  <text x="595" y="384" class="score">69/100 · watch · 7 anomalies · 1 open WOs</text>
+
+  <text x="72" y="426" class="asset">HX-301 - Heat Exchanger</text>
+  <rect x="72" y="442" width="500" height="18" rx="9" fill="#e7edf4"/>
+  <rect x="72" y="442" width="30" height="18" rx="9" fill="#027a48"/>
+  <text x="595" y="456" class="score">6/100 · healthy · 0 anomalies · 0 open WOs</text>
+
+  <text x="72" y="586" class="score">Generated from synthetic local data. No employer/client data included.</text>
+</svg>

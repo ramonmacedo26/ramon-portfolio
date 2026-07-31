@@ -1,0 +1,13 @@
+Work Order: WO-1004
+Asset ID: 
+Asset Name: Cooling Fan 4
+Site: VIX
+Request Date: 2026-07-05
+Priority: high
+Category: mechanical
+Requester: Carlos Nunes
+Failure Description: Excessive noise reported during startup.
+Recommended Action: Inspect blades and fastening points.
+Estimated Cost: 1200
+Downtime Hours: 2.0
+Status: open
