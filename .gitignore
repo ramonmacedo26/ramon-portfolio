@@ -1,0 +1,6 @@
+document_ai_project_blueprint.md
+github_publishing_strategy.md
+project_ideas_and_briefs.md
+projects_roadmap.md
+**/__pycache__/
+**/*.pyc

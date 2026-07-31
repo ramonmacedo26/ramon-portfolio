@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+  <defs>
+    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0c2746"/>
+      <stop offset="100%" stop-color="#1667aa"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#1263a3"/>
+    </linearGradient>
+    <style>
+      .title { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: white; }
+      .subtitle { font: 400 17px 'Segoe UI', Arial, sans-serif; fill: #ddeeff; }
+      .stepTitle { font: 800 20px 'Segoe UI', Arial, sans-serif; fill: #132238; }
+      .stepBody { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #627182; }
+      .mini { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #1263a3; letter-spacing: 1px; text-transform: uppercase; }
+      .artifact { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #0f766e; }
+    </style>
+  </defs>
+  <rect width="1400" height="620" fill="#edf4f8"/>
+  <rect x="36" y="28" width="1328" height="108" rx="26" fill="url(#hero)"/>
+  <text x="68" y="76" class="title">Document AI Ops Intake - Workflow</text>
+  <text x="68" y="108" class="subtitle">From messy operational files to validated spreadsheet outputs and exception handling</text>
+
+  <rect x="50" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
+  <text x="74" y="220" class="mini">Inputs</text>
+  <text x="74" y="254" class="stepTitle">Operational document inbox</text>
+  <text x="74" y="286" class="stepBody">Work orders</text>
+  <text x="74" y="316" class="stepBody">Technician reports</text>
+  <text x="74" y="346" class="stepBody">Inspection checklist exports</text>
+  <text x="74" y="376" class="stepBody">Vendor requests</text>
+  <text x="74" y="406" class="stepBody">Parts request forms</text>
+
+  <rect x="374" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
+  <text x="398" y="220" class="mini">Stage 1</text>
+  <text x="398" y="254" class="stepTitle">Bronze registration</text>
+  <text x="398" y="286" class="stepBody">Register source file metadata</text>
+  <text x="398" y="316" class="stepBody">Preserve raw excerpts</text>
+  <text x="398" y="346" class="stepBody">Track original document type</text>
+
+  <rect x="698" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
+  <text x="722" y="220" class="mini">Stage 2</text>
+  <text x="722" y="254" class="stepTitle">Extraction and normalization</text>
+  <text x="722" y="286" class="stepBody">Capture operational fields</text>
+  <text x="722" y="316" class="stepBody">Standardize priorities and categories</text>
+  <text x="722" y="346" class="stepBody">Create routing and summary fields</text>
+
+  <rect x="1022" y="186" width="300" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
+  <text x="1046" y="220" class="mini">Stage 3</text>
+  <text x="1046" y="254" class="stepTitle">Validation and business outputs</text>
+  <text x="1046" y="286" class="stepBody">Check required fields, dates, and values</text>
+  <text x="1046" y="316" class="stepBody">Separate clean records from exceptions</text>
+  <text x="1046" y="346" class="stepBody">Export CSV, XLSX, dashboard, and issue log</text>
+
+  <rect x="846" y="474" width="476" height="100" rx="18" fill="#f6fbfa" stroke="#b7ddd5"/>
+  <text x="870" y="508" class="mini">Outputs</text>
+  <text x="870" y="538" class="artifact">master_operational_intake.xlsx | exceptions_queue.csv | validation_results.csv | dashboard.html</text>
+
+  <rect x="698" y="474" width="120" height="100" rx="18" fill="#f8f9fc" stroke="#d8e2ed"/>
+  <text x="722" y="508" class="mini">Control</text>
+  <text x="722" y="538" class="stepBody">validation_issues</text>
+
+  <line x1="310" y1="308" x2="374" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="374,308 350,294 350,322" fill="#1263a3"/>
+  <line x1="634" y1="308" x2="698" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="698,308 674,294 674,322" fill="#1263a3"/>
+  <line x1="958" y1="308" x2="1022" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="1022,308 998,294 998,322" fill="#1263a3"/>
+  <line x1="758" y1="436" x2="758" y2="474" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1086" y1="436" x2="1086" y2="474" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+</svg>

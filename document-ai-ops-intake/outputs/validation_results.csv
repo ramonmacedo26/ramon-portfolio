@@ -1,0 +1,14 @@
+document_id,document_type,source_file,field_name,issue_type,issue_detail
+WO-1005,maintenance_work_order,WO-1005.txt,priority,invalid_priority,Unexpected priority urgent
+WO-1007,maintenance_work_order,WO-1007.txt,estimated_cost,negative_value,Estimated cost cannot be negative
+TR-2001,technician_service_report,TR-2001.md,priority,missing_required_field,priority is required
+TR-2002,technician_service_report,TR-2002.md,priority,missing_required_field,priority is required
+TR-2003,technician_service_report,TR-2003.md,priority,missing_required_field,priority is required
+TR-2003,technician_service_report,TR-2003.md,quantity,invalid_numeric,Quantity is not numeric
+TR-2004,technician_service_report,TR-2004.md,priority,missing_required_field,priority is required
+TR-2005,technician_service_report,TR-2005.md,priority,missing_required_field,priority is required
+TR-2005,technician_service_report,TR-2005.md,quantity,invalid_numeric,Quantity is not numeric
+TR-2006,technician_service_report,TR-2006.md,priority,missing_required_field,priority is required
+IN-3005,inspection_checklist,inspection_batch_a.csv,asset_id,missing_required_field,asset_id is required
+VR-4003,vendor_service_request,VR-4003.txt,event_date,invalid_date,Invalid date Site: RIO
+PR-5005,spare_parts_request,parts_requests_july.csv,quantity,negative_value,Quantity cannot be negative

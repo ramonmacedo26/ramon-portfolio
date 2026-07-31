@@ -1,0 +1,9 @@
+[project]
+name = "industrial-data-ai-copilot"
+version = "0.1.0"
+description = "Portfolio case study for industrial data engineering and AI-assisted maintenance analytics."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.unittest]
+start-dir = "tests"

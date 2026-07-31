@@ -1,0 +1,13 @@
+Work Order: WO-1001
+Asset ID: PMP-210
+Asset Name: Booster Pump A
+Site: RIO
+Request Date: 2026-07-02
+Priority: critical
+Category: mechanical
+Requester: Mariana Costa
+Failure Description: Abnormal vibration near coupling and oil leak around seal housing.
+Recommended Action: Inspect alignment, replace seal, and validate bearing condition.
+Estimated Cost: 7800
+Downtime Hours: 6.5
+Status: open

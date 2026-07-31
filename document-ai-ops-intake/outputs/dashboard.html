@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document AI Ops Intake</title>
+  <style>
+    :root {
+      --ink: #1e2430;
+      --muted: #6d7381;
+      --line: #e4dfd6;
+      --blue: #3467eb;
+      --teal: #2aa889;
+      --rose: #f97393;
+      --gold: #f2b65a;
+      --bg: #fff8ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(242, 182, 90, 0.16), transparent 24%),
+        radial-gradient(circle at top right, rgba(249, 115, 147, 0.14), transparent 24%),
+        var(--bg);
+      color: var(--ink);
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px 18px 44px; }
+    .hero { background: linear-gradient(135deg, #fff4d8, #ffe2dc 45%, #f8d9f0); color: #3a2b2b; border-radius: 24px; padding: 30px; border: 1px solid rgba(171, 143, 114, 0.18); }
+    .hero p { color: #6c5550; max-width: 760px; }
+    .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 18px 0; }
+    .card, .panel, .mini-card, .route-tile { background: rgba(255, 255, 255, 0.88); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 8px 24px rgba(70, 50, 30, 0.08); }
+    .card, .mini-card { padding: 18px; }
+    .label, .mini-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .metric { margin-top: 8px; font-size: 30px; font-weight: 800; }
+    .metric-sm { margin-top: 8px; font-size: 24px; font-weight: 800; }
+    .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; }
+    .triple { display: grid; grid-template-columns: 1fr 1fr 0.9fr; gap: 16px; margin-bottom: 16px; }
+    .panel-content { padding: 18px; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; color: var(--muted); background: #f5f8fb; }
+    td span { color: var(--muted); font-size: 13px; }
+    .mini-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .priority-critical { background: linear-gradient(135deg, #ffe0e6, #fff); }
+    .priority-high { background: linear-gradient(135deg, #ffeacc, #fff); }
+    .priority-medium { background: linear-gradient(135deg, #e6f2ff, #fff); }
+    .priority-low { background: linear-gradient(135deg, #e3faf1, #fff); }
+    .viz-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .viz-track {
+      height: 10px;
+      background: #f1e7dc;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .viz-track span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--rose));
+    }
+    .route-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .route-tile {
+      padding: 16px;
+    }
+    .route-tile span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .route-tile strong { font-size: 26px; }
+    @media (max-width: 920px) { .cards, .grid, .mini-grid, .triple, .route-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Document AI Ops Intake</h1>
+        <p>Document processing workflow for operational teams, converting scattered requests, reports, and checklist exports into structured, reviewable, spreadsheet-ready data.</p>
+  </section>
+
+  <section class="cards">
+    <article class="card"><div class="label">Documents processed</div><div class="metric">29</div></article>
+    <article class="card"><div class="label">Approved records</div><div class="metric">18</div></article>
+    <article class="card"><div class="label">Exception queue</div><div class="metric">11</div></article>
+    <article class="card"><div class="label">Estimated tracked cost</div><div class="metric">$51,270</div></article>
+  </section>
+
+  <section class="triple">
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Document mix</h2>
+        <p>Shows which kinds of documents dominated the intake window.</p>
+        
+        <div class="viz-row">
+          <span>Inspection Checklist</span>
+          <div class="viz-track"><span style="width:75%"></span></div>
+          <strong>6</strong>
+        </div>
+        
+        <div class="viz-row">
+          <span>Maintenance Work Order</span>
+          <div class="viz-track"><span style="width:100%"></span></div>
+          <strong>8</strong>
+        </div>
+        
+        <div class="viz-row">
+          <span>Spare Parts Request</span>
+          <div class="viz-track"><span style="width:62%"></span></div>
+          <strong>5</strong>
+        </div>
+        
+        <div class="viz-row">
+          <span>Technician Service Report</span>
+          <div class="viz-track"><span style="width:75%"></span></div>
+          <strong>6</strong>
+        </div>
+        
+        <div class="viz-row">
+          <span>Vendor Service Request</span>
+          <div class="viz-track"><span style="width:50%"></span></div>
+          <strong>4</strong>
+        </div>
+        
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Routing map</h2>
+        <p>Clean records are enriched with routing hints so teams can triage faster.</p>
+        <div class="route-grid">
+        <article class="route-tile">
+          <span>Inspection Team</span>
+          <strong>5</strong>
+        </article>
+        
+        <article class="route-tile">
+          <span>Operations Support</span>
+          <strong>4</strong>
+        </article>
+        
+        <article class="route-tile">
+          <span>Electrical Team</span>
+          <strong>3</strong>
+        </article>
+        
+        <article class="route-tile">
+          <span>Mechanical Team</span>
+          <strong>2</strong>
+        </article>
+        </div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Priority mix</h2>
+        <div class="mini-grid"><article class='mini-card priority-critical'><div class='mini-label'>Critical</div><div class='metric-sm'>3</div></article><article class='mini-card priority-high'><div class='mini-label'>High</div><div class='metric-sm'>8</div></article><article class='mini-card priority-low'><div class='mini-label'>Low</div><div class='metric-sm'>2</div></article><article class='mini-card priority-medium'><div class='mini-label'>Medium</div><div class='metric-sm'>5</div></article></div>
+      </div>
+    </section>
+  </section>
+
+  <section class="grid">
+    <section class="panel">
+      <div class="panel-content">
+        <h2>What the workflow does</h2>
+        <p>Ingests operational documents, extracts key fields, applies business rules, routes incomplete items to review, and publishes clean records for downstream use.</p>
+        <h2>Structured output preview</h2>
+        <table>
+          <thead>
+            <tr><th>Document</th><th>Asset</th><th>Site</th><th>Priority</th><th>Route</th><th>Summary</th></tr>
+          </thead>
+          <tbody>
+        <tr>
+          <td><strong>WO-1001</strong><br><span>maintenance_work_order</span></td>
+          <td>PMP-210</td>
+          <td>RIO</td>
+          <td>critical</td>
+          <td>mechanical_team</td>
+          <td>maintenance_work_order for PMP-210 at RIO with critical priority. Abnormal vibration near coupling and oil leak around seal housing.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>WO-1002</strong><br><span>maintenance_work_order</span></td>
+          <td>CMP-115</td>
+          <td>MCZ</td>
+          <td>high</td>
+          <td>electrical_team</td>
+          <td>maintenance_work_order for CMP-115 at MCZ with high priority. Motor trip observed twice during peak load.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>WO-1003</strong><br><span>maintenance_work_order</span></td>
+          <td>VLV-332</td>
+          <td>SSA</td>
+          <td>medium</td>
+          <td>instrumentation_team</td>
+          <td>maintenance_work_order for VLV-332 at SSA with medium priority. Position feedback inconsistent with local indicator.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>WO-1004</strong><br><span>maintenance_work_order</span></td>
+          <td>Asset Name: Cooling Fan 4</td>
+          <td>VIX</td>
+          <td>high</td>
+          <td>mechanical_team</td>
+          <td>maintenance_work_order for Asset Name: Cooling Fan 4 at VIX with high priority. Excessive noise reported during startup.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>WO-1006</strong><br><span>maintenance_work_order</span></td>
+          <td>PMP-455</td>
+          <td>RIO</td>
+          <td>low</td>
+          <td>inspection_team</td>
+          <td>maintenance_work_order for PMP-455 at RIO with low priority. Routine inspection created for small casing paint damage.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>WO-1008</strong><br><span>maintenance_work_order</span></td>
+          <td>TK-120</td>
+          <td>SSA</td>
+          <td>medium</td>
+          <td>inspection_team</td>
+          <td>maintenance_work_order for TK-120 at SSA with medium priority. Level gauge verification requested before audit.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>IN-3001</strong><br><span>inspection_checklist</span></td>
+          <td>PMP-210</td>
+          <td>RIO</td>
+          <td>high</td>
+          <td>inspection_team</td>
+          <td>inspection_checklist for PMP-210 at RIO with high priority. Thermography found hot coupling area.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>IN-3002</strong><br><span>inspection_checklist</span></td>
+          <td>TK-120</td>
+          <td>SSA</td>
+          <td>low</td>
+          <td>inspection_team</td>
+          <td>inspection_checklist for TK-120 at SSA with low priority. No abnormality detected. Routine compliance check.</td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Document types</h2>
+        <ul>
+          <li><strong>inspection_checklist</strong>: 6</li><li><strong>maintenance_work_order</strong>: 8</li><li><strong>spare_parts_request</strong>: 5</li><li><strong>technician_service_report</strong>: 6</li><li><strong>vendor_service_request</strong>: 4</li>
+        </ul>
+        <h2>Validation issues caught</h2>
+        <ul><li><strong>missing_required_field</strong>: 7</li><li><strong>negative_value</strong>: 2</li><li><strong>invalid_numeric</strong>: 2</li><li><strong>invalid_priority</strong>: 1</li><li><strong>invalid_date</strong>: 1</li></ul>
+        <p>This layer flags missing asset references, invalid priorities, negative values, and incomplete vendor requests before data reaches business users.</p>
+      </div>
+    </section>
+  </section>
+</main>
+</body>
+</html>

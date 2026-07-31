@@ -1,0 +1,11 @@
+Subject: Service Request VR-4004 for CMP-115
+Request Date: 2026-07-08
+Required By: 2026-07-12
+Site: MCZ
+Priority: high
+Vendor: ElectroWorks
+Category: electrical
+Details: Specialist support requested for MCC inspection.
+Requested Action: Coordinate shutdown slot and access permit.
+Estimated Cost: 6200
+Status: in_progress

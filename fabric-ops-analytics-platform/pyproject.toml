@@ -1,0 +1,6 @@
+[project]
+name = "fabric-ops-analytics-platform"
+version = "0.1.0"
+description = "Portfolio demo of a Microsoft Fabric style operations lakehouse project."
+requires-python = ">=3.11"
+

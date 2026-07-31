@@ -1,0 +1,6 @@
+document_id,request_date,asset_id,site,priority,requester,part_code,part_name,quantity,estimated_cost,status
+PR-5001,2026-07-05,PMP-210,RIO,high,Mariana Costa,SEAL-44,Mechanical Seal Kit,1,1200,approved
+PR-5002,2026-07-06,CMP-115,MCZ,high,Felipe Ramos,RELAY-19,Overload Relay,2,900,approved
+PR-5003,2026-07-07,GEN-808,MCZ,critical,Daniel Rocha,BAT-88,Industrial Battery Module,4,4800,open
+PR-5004,2026-07-08,VLV-332,SSA,medium,Ana Beatriz,AIR-22,Pneumatic Filter,1,220,closed
+PR-5005,2026-07-08,FAN-404,VIX,medium,Carlos Nunes,BOLT-11,Blade Fastening Kit,-1,150,open

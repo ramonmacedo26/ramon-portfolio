@@ -1,0 +1,13 @@
+Work Order: WO-1005
+Asset ID: HTX-901
+Asset Name: Heat Exchanger C
+Site: RIO
+Request Date: 2026-07-06
+Priority: urgent
+Category: mechanical
+Requester: Bruno Lima
+Failure Description: Thermal efficiency drop and suspected fouling.
+Recommended Action: Plan cleaning window and inspect pressure drop.
+Estimated Cost: 5100
+Downtime Hours: 4.0
+Status: open

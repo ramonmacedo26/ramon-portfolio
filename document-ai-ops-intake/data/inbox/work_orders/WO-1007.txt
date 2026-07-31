@@ -1,0 +1,13 @@
+Work Order: WO-1007
+Asset ID: GEN-808
+Asset Name: Backup Generator 1
+Site: MCZ
+Request Date: 2026-07-08
+Priority: critical
+Category: electrical
+Requester: Daniel Rocha
+Failure Description: Battery bank failed startup readiness test.
+Recommended Action: Replace battery set and repeat startup test.
+Estimated Cost: -900
+Downtime Hours: 5.0
+Status: open

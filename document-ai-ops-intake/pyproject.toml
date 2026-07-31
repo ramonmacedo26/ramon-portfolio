@@ -1,0 +1,5 @@
+[project]
+name = "document-ai-ops-intake"
+version = "0.1.0"
+description = "Portfolio demo of an AI-assisted document intake workflow for operational data."
+requires-python = ">=3.11"

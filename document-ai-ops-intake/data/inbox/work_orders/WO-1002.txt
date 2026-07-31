@@ -1,0 +1,13 @@
+Work Order: WO-1002
+Asset ID: CMP-115
+Asset Name: Air Compressor 2
+Site: MCZ
+Request Date: 2026-07-03
+Priority: high
+Category: electrical
+Requester: Felipe Ramos
+Failure Description: Motor trip observed twice during peak load.
+Recommended Action: Check MCC panel, cable insulation, and overload settings.
+Estimated Cost: 4300
+Downtime Hours: 3.0
+Status: in_progress
