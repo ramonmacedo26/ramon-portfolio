@@ -1,6 +1,54 @@
+# Planning and private working notes
 document_ai_project_blueprint.md
 github_publishing_strategy.md
 project_ideas_and_briefs.md
 projects_roadmap.md
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+*.local
+
+# Keys, certificates, and tokens
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Databases and local state
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python cache and test artifacts
 **/__pycache__/
 **/*.pyc
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.coverage
+**/htmlcov/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Personal/private assets not meant for a public repository
+assets/Ramon_Macedo_CV.pdf
