@@ -1,71 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" fill="none">
   <defs>
-    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0c2746"/>
-      <stop offset="100%" stop-color="#1667aa"/>
+    <linearGradient id="hero" x1="56" y1="40" x2="1384" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12314F"/>
+      <stop offset="1" stop-color="#1D69AC"/>
     </linearGradient>
-    <linearGradient id="arrow" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#0f766e"/>
-      <stop offset="100%" stop-color="#1263a3"/>
+    <linearGradient id="arrow" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#0F7B75"/>
+      <stop offset="1" stop-color="#1D69AC"/>
     </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1440" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#102239" flood-opacity="0.12"/>
+    </filter>
     <style>
-      .title { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: white; }
-      .subtitle { font: 400 17px 'Segoe UI', Arial, sans-serif; fill: #ddeeff; }
-      .stepTitle { font: 800 20px 'Segoe UI', Arial, sans-serif; fill: #132238; }
-      .stepBody { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #627182; }
-      .mini { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #1263a3; letter-spacing: 1px; text-transform: uppercase; }
-      .artifact { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #0f766e; }
+      .title { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: #F7FBFF; }
+      .subtitle { font: 500 17px 'Segoe UI', Arial, sans-serif; fill: #DCEBFA; }
+      .kicker { font: 700 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; fill: #2A69AD; }
+      .stepTitle { font: 800 18px 'Segoe UI', Arial, sans-serif; fill: #132238; }
+      .stepBody { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #617284; }
+      .outputText { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #0F766E; }
+      .outputFill { fill: #F7FCFB; stroke: #B8DDD5; }
+      .controlFill { fill: #F7F9FD; stroke: #D7E2EC; }
     </style>
   </defs>
-  <rect width="1400" height="620" fill="#edf4f8"/>
-  <rect x="36" y="28" width="1328" height="108" rx="26" fill="url(#hero)"/>
-  <text x="68" y="76" class="title">Document AI Ops Intake - Workflow</text>
-  <text x="68" y="108" class="subtitle">From messy operational files to validated spreadsheet outputs and exception handling</text>
 
-  <rect x="50" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
-  <text x="74" y="220" class="mini">Inputs</text>
-  <text x="74" y="254" class="stepTitle">Operational document inbox</text>
-  <text x="74" y="286" class="stepBody">Work orders</text>
-  <text x="74" y="316" class="stepBody">Technician reports</text>
-  <text x="74" y="346" class="stepBody">Inspection checklist exports</text>
-  <text x="74" y="376" class="stepBody">Vendor requests</text>
-  <text x="74" y="406" class="stepBody">Parts request forms</text>
+  <rect width="1440" height="760" fill="#EDF4F8"/>
+  <g filter="url(#shadow)">
+    <rect x="28" y="24" width="1384" height="712" rx="30" fill="#F7FBFF"/>
+  </g>
 
-  <rect x="374" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
-  <text x="398" y="220" class="mini">Stage 1</text>
-  <text x="398" y="254" class="stepTitle">Bronze registration</text>
-  <text x="398" y="286" class="stepBody">Register source file metadata</text>
-  <text x="398" y="316" class="stepBody">Preserve raw excerpts</text>
-  <text x="398" y="346" class="stepBody">Track original document type</text>
+  <rect x="56" y="46" width="1328" height="108" rx="28" fill="url(#hero)"/>
+  <text x="90" y="95" class="title">Document AI Ops Intake · Workflow</text>
+  <text x="90" y="127" class="subtitle">From messy operational files to validated spreadsheet outputs, exception routing, and review-ready datasets</text>
 
-  <rect x="698" y="186" width="260" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
-  <text x="722" y="220" class="mini">Stage 2</text>
-  <text x="722" y="254" class="stepTitle">Extraction and normalization</text>
-  <text x="722" y="286" class="stepBody">Capture operational fields</text>
-  <text x="722" y="316" class="stepBody">Standardize priorities and categories</text>
-  <text x="722" y="346" class="stepBody">Create routing and summary fields</text>
+  <rect x="70" y="202" width="250" height="266" rx="22" fill="#FFFFFF" stroke="#D8E2ED"/>
+  <text x="94" y="236" class="kicker">Inputs</text>
+  <text x="94" y="270" class="stepTitle">Operational document inbox</text>
+  <text x="94" y="306" class="stepBody">• Work orders</text>
+  <text x="94" y="338" class="stepBody">• Technician reports</text>
+  <text x="94" y="370" class="stepBody">• Inspection checklist exports</text>
+  <text x="94" y="402" class="stepBody">• Vendor requests</text>
+  <text x="94" y="434" class="stepBody">• Parts request forms</text>
 
-  <rect x="1022" y="186" width="300" height="250" rx="22" fill="white" stroke="#d8e2ed"/>
-  <text x="1046" y="220" class="mini">Stage 3</text>
-  <text x="1046" y="254" class="stepTitle">Validation and business outputs</text>
-  <text x="1046" y="286" class="stepBody">Check required fields, dates, and values</text>
-  <text x="1046" y="316" class="stepBody">Separate clean records from exceptions</text>
-  <text x="1046" y="346" class="stepBody">Export CSV, XLSX, dashboard, and issue log</text>
+  <rect x="366" y="202" width="250" height="266" rx="22" fill="#FFFFFF" stroke="#D8E2ED"/>
+  <text x="390" y="236" class="kicker">Stage 1</text>
+  <text x="390" y="270" class="stepTitle">Bronze registration</text>
+  <text x="390" y="306" class="stepBody">• Register source file metadata</text>
+  <text x="390" y="338" class="stepBody">• Preserve raw excerpts</text>
+  <text x="390" y="370" class="stepBody">• Track original document type</text>
+  <text x="390" y="402" class="stepBody">• Keep lineage for each record</text>
 
-  <rect x="846" y="474" width="476" height="100" rx="18" fill="#f6fbfa" stroke="#b7ddd5"/>
-  <text x="870" y="508" class="mini">Outputs</text>
-  <text x="870" y="538" class="artifact">master_operational_intake.xlsx | exceptions_queue.csv | validation_results.csv | dashboard.html</text>
+  <rect x="662" y="202" width="270" height="266" rx="22" fill="#FFFFFF" stroke="#D8E2ED"/>
+  <text x="686" y="236" class="kicker">Stage 2</text>
+  <text x="686" y="270" class="stepTitle">Extraction and</text>
+  <text x="686" y="294" class="stepTitle">normalization</text>
+  <text x="686" y="330" class="stepBody">• Capture operational fields</text>
+  <text x="686" y="362" class="stepBody">• Standardize priorities</text>
+  <text x="686" y="394" class="stepBody">• Normalize categories</text>
+  <text x="686" y="426" class="stepBody">• Create routing and summaries</text>
 
-  <rect x="698" y="474" width="120" height="100" rx="18" fill="#f8f9fc" stroke="#d8e2ed"/>
-  <text x="722" y="508" class="mini">Control</text>
-  <text x="722" y="538" class="stepBody">validation_issues</text>
+  <rect x="978" y="202" width="330" height="266" rx="22" fill="#FFFFFF" stroke="#D8E2ED"/>
+  <text x="1002" y="236" class="kicker">Stage 3</text>
+  <text x="1002" y="270" class="stepTitle">Validation and</text>
+  <text x="1002" y="294" class="stepTitle">business outputs</text>
+  <text x="1002" y="330" class="stepBody">• Check required fields, dates, and values</text>
+  <text x="1002" y="362" class="stepBody">• Separate approved records from exceptions</text>
+  <text x="1002" y="394" class="stepBody">• Export review-ready files and dashboard</text>
+  <text x="1002" y="426" class="stepBody">• Write detailed validation issue log</text>
 
-  <line x1="310" y1="308" x2="374" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="374,308 350,294 350,322" fill="#1263a3"/>
-  <line x1="634" y1="308" x2="698" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="698,308 674,294 674,322" fill="#1263a3"/>
-  <line x1="958" y1="308" x2="1022" y2="308" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="1022,308 998,294 998,322" fill="#1263a3"/>
-  <line x1="758" y1="436" x2="758" y2="474" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
-  <line x1="1086" y1="436" x2="1086" y2="474" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+  <line x1="320" y1="334" x2="366" y2="334" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="366,334 344,320 344,348" fill="#1D69AC"/>
+
+  <line x1="616" y1="334" x2="662" y2="334" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="662,334 640,320 640,348" fill="#1D69AC"/>
+
+  <line x1="932" y1="334" x2="978" y2="334" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="978,334 956,320 956,348" fill="#1D69AC"/>
+
+  <line x1="797" y1="468" x2="797" y2="514" stroke="#0F7B75" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1143" y1="468" x2="1143" y2="514" stroke="#0F7B75" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="682" y="514" width="150" height="92" rx="18" class="controlFill"/>
+  <text x="706" y="546" class="kicker">Control</text>
+  <text x="706" y="578" class="stepBody">validation_issues</text>
+
+  <rect x="862" y="514" width="446" height="164" rx="22" class="outputFill"/>
+  <text x="886" y="546" class="kicker">Outputs</text>
+
+  <rect x="886" y="570" width="398" height="30" rx="15" fill="#FFFFFF" stroke="#C9E7DF"/>
+  <text x="906" y="590" class="outputText">master_operational_intake.xlsx</text>
+
+  <rect x="886" y="612" width="304" height="30" rx="15" fill="#FFFFFF" stroke="#C9E7DF"/>
+  <text x="906" y="632" class="outputText">exceptions_queue.csv</text>
+
+  <rect x="1204" y="612" width="80" height="30" rx="15" fill="#FFFFFF" stroke="#C9E7DF"/>
+  <text x="1222" y="632" class="outputText">XLSX</text>
+
+  <rect x="886" y="654" width="226" height="30" rx="15" fill="#FFFFFF" stroke="#C9E7DF"/>
+  <text x="906" y="674" class="outputText">validation_results.csv</text>
+
+  <rect x="1126" y="654" width="158" height="30" rx="15" fill="#FFFFFF" stroke="#C9E7DF"/>
+  <text x="1146" y="674" class="outputText">dashboard.html</text>
 </svg>
