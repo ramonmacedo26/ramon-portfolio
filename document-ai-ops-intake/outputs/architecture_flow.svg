@@ -1,101 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860" fill="none">
   <defs>
-    <linearGradient id="hero" x1="72" y1="44" x2="1368" y2="154" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#102A44"/>
-      <stop offset="1" stop-color="#1E6AAA"/>
+    <linearGradient id="bg" x1="112" y1="58" x2="1328" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112B45"/>
+      <stop offset="0.55" stop-color="#1C588C"/>
+      <stop offset="1" stop-color="#198975"/>
     </linearGradient>
-    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#0E7B74"/>
-      <stop offset="1" stop-color="#226FB2"/>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#226FB2"/>
+      <stop offset="1" stop-color="#198975"/>
     </linearGradient>
-    <filter id="shadow" x="0" y="0" width="1440" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#102239" flood-opacity="0.12"/>
+    <filter id="shadow" x="0" y="0" width="1440" height="860" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#102239" flood-opacity="0.12"/>
     </filter>
     <style>
-      .title { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: #F7FBFF; }
+      .title { font: 800 36px 'Segoe UI', Arial, sans-serif; fill: #F7FBFF; }
       .subtitle { font: 500 17px 'Segoe UI', Arial, sans-serif; fill: #DCEBFA; }
-      .kicker { font: 700 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.4px; text-transform: uppercase; fill: #2C70AD; }
-      .cardTitle { font: 800 18px 'Segoe UI', Arial, sans-serif; fill: #132238; }
-      .copy { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #617284; }
-      .pill { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #0E7B74; }
-      .muted { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #6D7C8C; }
+      .eyebrow { font: 700 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.6px; text-transform: uppercase; fill: #9FD3FF; }
+      .stepNo { font: 800 28px 'Segoe UI', Arial, sans-serif; fill: #FFFFFF; }
+      .stepKicker { font: 700 11px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; fill: #5B6D80; }
+      .stepTitle { font: 800 22px 'Segoe UI', Arial, sans-serif; fill: #11263B; }
+      .copy { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #607285; }
+      .mini { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #0D7A73; }
+      .outTitle { font: 800 18px 'Segoe UI', Arial, sans-serif; fill: #12314F; }
+      .pill { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #176A5E; }
     </style>
   </defs>
 
-  <rect width="1440" height="820" fill="#EDF4F8"/>
+  <rect width="1440" height="860" fill="#EDF4F8"/>
   <g filter="url(#shadow)">
-    <rect x="30" y="28" width="1380" height="764" rx="32" fill="#F7FBFF"/>
+    <rect x="34" y="30" width="1372" height="796" rx="34" fill="#F7FBFF"/>
   </g>
 
-  <rect x="58" y="48" width="1324" height="110" rx="28" fill="url(#hero)"/>
-  <text x="92" y="96" class="title">Document AI Ops Intake - Workflow</text>
-  <text x="92" y="128" class="subtitle">Semi-structured operational documents become validated outputs, review queues, and reporting-ready datasets</text>
+  <rect x="64" y="52" width="1312" height="122" rx="30" fill="url(#bg)"/>
+  <text x="100" y="93" class="eyebrow">Document AI automation case</text>
+  <text x="100" y="133" class="title">Document AI Ops Intake Workflow</text>
+  <text x="100" y="162" class="subtitle">Mixed operational documents become validated outputs, review queues, and spreadsheet-ready data products</text>
 
-  <rect x="82" y="210" width="250" height="264" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
-  <text x="108" y="244" class="kicker">Inputs</text>
-  <text x="108" y="278" class="cardTitle">Operational document inbox</text>
-  <text x="108" y="316" class="copy">- Work orders</text>
-  <text x="108" y="348" class="copy">- Technician reports</text>
-  <text x="108" y="380" class="copy">- Inspection checklists</text>
-  <text x="108" y="412" class="copy">- Vendor requests</text>
-  <text x="108" y="444" class="copy">- Parts request forms</text>
+  <rect x="116" y="420" width="1208" height="12" rx="6" fill="#DDE7F0"/>
+  <rect x="116" y="420" width="1208" height="12" rx="6" fill="url(#track)" opacity="0.9"/>
 
-  <rect x="388" y="210" width="250" height="264" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
-  <text x="414" y="244" class="kicker">Stage 1</text>
-  <text x="414" y="278" class="cardTitle">Bronze registration</text>
-  <text x="414" y="316" class="copy">- Register source metadata</text>
-  <text x="414" y="348" class="copy">- Preserve raw excerpts</text>
-  <text x="414" y="380" class="copy">- Track original document type</text>
-  <text x="414" y="412" class="copy">- Keep lineage by file and record</text>
+  <circle cx="190" cy="426" r="26" fill="#226FB2"/>
+  <text x="180" y="435" class="stepNo">1</text>
+  <circle cx="490" cy="426" r="26" fill="#2A7FB1"/>
+  <text x="480" y="435" class="stepNo">2</text>
+  <circle cx="790" cy="426" r="26" fill="#238A98"/>
+  <text x="780" y="435" class="stepNo">3</text>
+  <circle cx="1090" cy="426" r="26" fill="#198975"/>
+  <text x="1080" y="435" class="stepNo">4</text>
 
-  <rect x="694" y="210" width="262" height="264" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
-  <text x="720" y="244" class="kicker">Stage 2</text>
-  <text x="720" y="278" class="cardTitle">Extraction and normalization</text>
-  <text x="720" y="316" class="copy">- Capture fields like asset, site,</text>
-  <text x="720" y="340" class="copy">  priority, category, and cost</text>
-  <text x="720" y="378" class="copy">- Standardize labels and values</text>
-  <text x="720" y="410" class="copy">- Add routing and summary fields</text>
+  <rect x="70" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <text x="98" y="260" class="stepKicker">Inputs</text>
+  <text x="98" y="294" class="stepTitle">Collect</text>
+  <text x="98" y="326" class="copy">Work orders, technician notes,</text>
+  <text x="98" y="350" class="copy">inspection files, vendor requests,</text>
+  <text x="98" y="374" class="copy">and parts forms enter one intake lane.</text>
 
-  <rect x="1012" y="210" width="346" height="264" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
-  <text x="1038" y="244" class="kicker">Stage 3</text>
-  <text x="1038" y="278" class="cardTitle">Validation and business outputs</text>
-  <text x="1038" y="316" class="copy">- Check required fields, dates, and values</text>
-  <text x="1038" y="348" class="copy">- Separate approved rows from exceptions</text>
-  <text x="1038" y="380" class="copy">- Export files for review and reporting</text>
-  <text x="1038" y="412" class="copy">- Write validation issue log</text>
+  <rect x="370" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <text x="398" y="260" class="stepKicker">Stage 1</text>
+  <text x="398" y="294" class="stepTitle">Register</text>
+  <text x="398" y="326" class="copy">Capture source metadata, raw</text>
+  <text x="398" y="350" class="copy">text excerpts, and lineage for</text>
+  <text x="398" y="374" class="copy">every document and record.</text>
 
-  <line x1="332" y1="342" x2="388" y2="342" stroke="url(#flow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="388,342 364,327 364,357" fill="#226FB2"/>
+  <rect x="670" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <text x="698" y="260" class="stepKicker">Stage 2</text>
+  <text x="698" y="294" class="stepTitle">Extract</text>
+  <text x="698" y="326" class="copy">Normalize asset, site, priority,</text>
+  <text x="698" y="350" class="copy">category, cost, and routing</text>
+  <text x="698" y="374" class="copy">fields for downstream use.</text>
 
-  <line x1="638" y1="342" x2="694" y2="342" stroke="url(#flow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="694,342 670,327 670,357" fill="#226FB2"/>
+  <rect x="970" y="230" width="330" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <text x="998" y="260" class="stepKicker">Stage 3</text>
+  <text x="998" y="294" class="stepTitle">Validate and publish</text>
+  <text x="998" y="326" class="copy">Check dates, required values, and field quality.</text>
+  <text x="998" y="350" class="copy">Separate approved rows from exceptions.</text>
+  <text x="998" y="374" class="copy">Export reporting-ready outputs.</text>
 
-  <line x1="956" y1="342" x2="1012" y2="342" stroke="url(#flow)" stroke-width="8" stroke-linecap="round"/>
-  <polygon points="1012,342 988,327 988,357" fill="#226FB2"/>
+  <line x1="190" y1="384" x2="190" y2="400" stroke="#226FB2" stroke-width="6" stroke-linecap="round"/>
+  <line x1="490" y1="384" x2="490" y2="400" stroke="#2A7FB1" stroke-width="6" stroke-linecap="round"/>
+  <line x1="790" y1="384" x2="790" y2="400" stroke="#238A98" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1090" y1="384" x2="1090" y2="400" stroke="#198975" stroke-width="6" stroke-linecap="round"/>
 
-  <line x1="825" y1="474" x2="825" y2="528" stroke="#0E7B74" stroke-width="6" stroke-linecap="round"/>
-  <line x1="1186" y1="474" x2="1186" y2="528" stroke="#0E7B74" stroke-width="6" stroke-linecap="round"/>
+  <rect x="202" y="486" width="276" height="148" rx="24" fill="#F6FAFE" stroke="#D5E1EC"/>
+  <text x="230" y="520" class="stepKicker">Input Types</text>
+  <text x="230" y="552" class="mini">TXT</text>
+  <text x="278" y="552" class="copy">work orders and vendor notes</text>
+  <text x="230" y="582" class="mini">MD</text>
+  <text x="278" y="582" class="copy">technician service reports</text>
+  <text x="230" y="612" class="mini">CSV</text>
+  <text x="278" y="612" class="copy">inspection and parts exports</text>
 
-  <rect x="736" y="528" width="178" height="96" rx="20" fill="#F7F9FD" stroke="#D7E2EC"/>
-  <text x="762" y="562" class="kicker">Control Layer</text>
-  <text x="762" y="595" class="copy">validation_issues</text>
+  <rect x="582" y="486" width="248" height="148" rx="24" fill="#F8FBFD" stroke="#D5E1EC"/>
+  <text x="610" y="520" class="stepKicker">Control Layer</text>
+  <text x="610" y="552" class="outTitle">validation_issues</text>
+  <text x="610" y="584" class="copy">Flags missing fields, invalid</text>
+  <text x="610" y="608" class="copy">dates, numeric errors, and</text>
+  <text x="610" y="632" class="copy">records that need review.</text>
 
-  <rect x="950" y="528" width="408" height="208" rx="24" fill="#F7FCFB" stroke="#B8DDD5"/>
-  <text x="978" y="562" class="kicker">Outputs</text>
-  <text x="978" y="590" class="muted">Approved data products and review artifacts</text>
+  <rect x="934" y="486" width="390" height="250" rx="26" fill="#F7FCFB" stroke="#B7DDD4"/>
+  <text x="964" y="520" class="stepKicker">Outputs</text>
+  <text x="964" y="552" class="outTitle">Business-ready deliverables</text>
 
-  <rect x="978" y="614" width="352" height="34" rx="17" fill="#FFFFFF" stroke="#C8E7DF"/>
-  <text x="998" y="636" class="pill">master_operational_intake.xlsx</text>
+  <rect x="964" y="578" width="330" height="38" rx="19" fill="#FFFFFF" stroke="#C8E7DF"/>
+  <text x="986" y="602" class="pill">master_operational_intake.xlsx</text>
 
-  <rect x="978" y="660" width="238" height="34" rx="17" fill="#FFFFFF" stroke="#C8E7DF"/>
-  <text x="998" y="682" class="pill">exceptions_queue.csv</text>
+  <rect x="964" y="628" width="228" height="38" rx="19" fill="#FFFFFF" stroke="#C8E7DF"/>
+  <text x="986" y="652" class="pill">exceptions_queue.csv</text>
 
-  <rect x="1228" y="660" width="102" height="34" rx="17" fill="#FFFFFF" stroke="#C8E7DF"/>
-  <text x="1257" y="682" class="pill">.xlsx</text>
+  <rect x="1206" y="628" width="88" height="38" rx="19" fill="#FFFFFF" stroke="#C8E7DF"/>
+  <text x="1234" y="652" class="pill">.xlsx</text>
 
-  <rect x="978" y="706" width="204" height="34" rx="17" fill="#FFFFFF" stroke="#C8E7DF"/>
-  <text x="998" y="728" class="pill">validation_results.csv</text>
+  <rect x="964" y="678" width="196" height="38" rx="19" fill="#FFFFFF" stroke="#C8E7DF"/>
+  <text x="986" y="702" class="pill">validation_results.csv</text>
 
-  <rect x="1194" y="706" width="136" height="34" rx="17" fill="#FFFFFF" stroke="#C8E7DF"/>
-  <text x="1215" y="728" class="pill">dashboard.html</text>
+  <rect x="1174" y="678" width="120" height="38" rx="19" fill="#FFFFFF" stroke="#C8E7DF"/>
+  <text x="1198" y="702" class="pill">dashboard.html</text>
 </svg>
