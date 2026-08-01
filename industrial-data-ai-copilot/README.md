@@ -1,68 +1,67 @@
-# Industrial Data & AI Copilot - Predictive Maintenance Analytics
+# Industrial Data & AI Copilot
 
-Portfolio case study by Ramon Macedo.
+Predictive maintenance portfolio case built to show how raw operational data can be ingested, validated, modeled, and translated into maintenance decisions that non-technical teams can actually use.
 
-This project shows how I approach practical Data Engineering + AI Automation work in an industrial context: turn messy operational files into a reliable analytics layer, identify maintenance risk, and generate short work-order briefs for business users.
+## Overview
 
-No employer or client data is included. The data is synthetic and intentionally includes dirty records so the quality layer has something realistic to catch.
+This project simulates an industrial analytics workflow where sensor readings, maintenance orders, cost events, and work reports arrive as messy source files. The pipeline loads those inputs into a local warehouse, applies quality checks, builds Bronze, Silver, and Gold layers, and publishes business-facing outputs.
 
-## What this demonstrates
+The point of the case is not only to move data. It is to show how data engineering, industrial context, and AI-style workflow support can come together in one practical delivery.
 
-- Data pipeline design across Bronze, Silver, and Gold layers.
-- Python + SQL data engineering with a local SQLite warehouse.
-- Data quality checks for duplicates, missing values, invalid workflow states, and physically impossible sensor readings.
-- Industrial analytics using sensor readings, maintenance orders, work reports, and cost events.
-- AI-style automation: rule-based extraction of maintenance signals and concise work-order briefs.
-- Recruiter-friendly output: a static dashboard and short case summary.
+## Business Problem
 
-## Business problem
+Operations and maintenance teams usually do not struggle because data is completely absent. They struggle because the data is fragmented, inconsistent, and difficult to turn into action quickly.
 
-Industrial teams often have useful operational data spread across sensor logs, work orders, cost exports, and free-text reports. The friction is not only technical: the data needs to be validated, modeled, summarized, and translated into actions that maintenance and operations teams can actually use.
+This project is designed around a simple operational need:
 
-This demo simulates that workflow end to end.
+- consolidate multiple operational sources
+- catch bad records before they reach reporting
+- score asset risk in a readable way
+- generate short maintenance-oriented summaries for faster decision-making
+
+## What This Project Demonstrates
+
+- Bronze, Silver, and Gold pipeline design
+- Python and SQL transformations on top of a local SQLite warehouse
+- data quality checks for duplicates, missing values, invalid workflow states, and impossible readings
+- industrial analytics across equipment, work orders, anomalies, and cost exposure
+- AI-style maintenance briefs designed for stakeholder consumption
+- recruiter-friendly outputs through a dashboard, case summary, and case study
 
 ## Architecture
 
 ```text
-raw CSV files
-  -> Bronze SQLite tables
-  -> Silver validated tables + data quality issue log
-  -> Gold equipment health summary + work-order copilot briefs
-  -> dashboard.html + case_summary.md
+raw source files
+  -> Bronze ingestion tables
+  -> Silver validation and standardization
+  -> Gold equipment health and work-order summaries
+  -> dashboard.html + case_summary + case study
 ```
 
-## Quick start
+## Source Domains
 
-From this folder:
+The case uses four source domains:
 
-```powershell
-python .\scripts\run_pipeline.py
-python -m unittest discover -s .\tests
-```
+- sensor readings
+- maintenance orders
+- cost events
+- work reports
 
-Generated outputs:
+The inputs are synthetic and intentionally include dirty records so the quality layer has realistic issues to detect.
 
-- `data/raw/*.csv`: synthetic source files.
-- `data/warehouse/industrial_ops.db`: local warehouse.
-- `outputs/dashboard.html`: recruiter-friendly dashboard.
-- `outputs/case_summary.md`: short written summary.
+## Outputs
 
-## Example outputs
+Running the pipeline generates:
 
-![Dashboard preview](outputs/dashboard_preview.svg)
+- `data/raw/*.csv` - synthetic source files
+- `data/warehouse/industrial_ops.db` - local warehouse
+- `outputs/dashboard.html` - business-facing dashboard
+- `outputs/case_summary.html` - short summary page
+- `docs/case_study.html` - full case narrative
 
-The dashboard highlights:
+## Data Model
 
-- highest-risk equipment;
-- open work orders;
-- anomaly counts;
-- estimated maintenance cost exposure;
-- data quality issues caught before analytics consumption;
-- AI-style work-order briefs.
-
-## Data model
-
-Bronze tables preserve ingested source rows:
+Bronze tables preserve ingested records:
 
 - `bronze_sensor_readings`
 - `bronze_maintenance_orders`
@@ -77,29 +76,68 @@ Silver tables standardize and validate records:
 - `silver_work_reports`
 - `data_quality_issues`
 
-Gold tables are analytics-ready:
+Gold tables support analytics consumption:
 
 - `gold_equipment_health_summary`
 - `gold_work_order_copilot_briefs`
 
-## Why this is relevant to Data Engineer + AI roles
+## Repository Structure
 
-This case connects the core pieces companies usually need from modern data engineers:
+```text
+industrial-data-ai-copilot/
+  data/
+    raw/
+    warehouse/
+  docs/
+    case_study.html
+    case_study.md
+  outputs/
+    dashboard.html
+    dashboard_preview.svg
+    case_summary.html
+    case_summary.md
+  scripts/
+    run_pipeline.py
+  src/
+    industrial_copilot/
+      config.py
+      generate_data.py
+      pipeline.py
+  tests/
+    test_pipeline.py
+```
 
-- reliable ingestion;
-- quality gates;
-- medallion-style modeling;
-- SQL-ready warehouse outputs;
-- domain-aware business metrics;
-- readable documentation;
-- automation that helps non-technical users act faster.
+## Quick Start
 
-It also reflects my strongest professional positioning: Mechanical Engineering background, industrial/Oil & Gas exposure, and hands-on work with Python, SQL, PySpark, Microsoft Fabric, Power BI, and AI-assisted workflow automation.
+From this folder:
 
-## Next improvements
+```powershell
+python .\scripts\run_pipeline.py
+python -m unittest discover -s .\tests
+```
 
-- Add a public deployment of the dashboard.
-- Add a Power BI version of the Gold model.
-- Add dbt-style tests or Great Expectations-style checks.
-- Add an optional LLM layer for richer report summarization when API credentials are available.
-- Add screenshots to the README after the dashboard is published.
+## Example Output
+
+![Dashboard preview](outputs/dashboard_preview.svg)
+
+The dashboard highlights:
+
+- highest-risk equipment
+- anomaly counts
+- open work orders
+- cost exposure
+- quality issues caught before downstream use
+- AI-style work-order briefs
+
+## Why This Case Matters
+
+This project is a strong fit for Data Engineering, Analytics Engineering, and AI Automation conversations because it combines:
+
+- ingestion and modeling discipline
+- quality control
+- business-facing metrics
+- domain-aware framing
+- automation that helps teams act faster
+
+It also reflects the positioning behind the portfolio overall: operational data, practical analytics, and workflow acceleration rather than generic demo work.
+
