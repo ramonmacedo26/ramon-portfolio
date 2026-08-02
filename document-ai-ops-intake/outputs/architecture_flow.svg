@@ -18,8 +18,8 @@
       .eyebrow { font: 700 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.6px; text-transform: uppercase; fill: #9FD3FF; }
       .stepNo { font: 800 28px 'Segoe UI', Arial, sans-serif; fill: #FFFFFF; }
       .stepKicker { font: 700 11px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.5px; text-transform: uppercase; fill: #5B6D80; }
-      .stepTitle { font: 800 22px 'Segoe UI', Arial, sans-serif; fill: #11263B; }
-      .copy { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #607285; }
+      .stepTitle { font: 800 20px 'Segoe UI', Arial, sans-serif; fill: #11263B; }
+      .copy { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #607285; }
       .mini { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #0D7A73; }
       .outTitle { font: 800 18px 'Segoe UI', Arial, sans-serif; fill: #12314F; }
       .pill { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #176A5E; }
@@ -48,33 +48,34 @@
   <circle cx="1090" cy="426" r="26" fill="#198975"/>
   <text x="1080" y="435" class="stepNo">4</text>
 
-  <rect x="70" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <rect x="70" y="224" width="252" height="164" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
   <text x="98" y="260" class="stepKicker">Inputs</text>
   <text x="98" y="294" class="stepTitle">Collect</text>
   <text x="98" y="326" class="copy">Work orders, technician notes,</text>
   <text x="98" y="350" class="copy">inspection files, vendor requests,</text>
-  <text x="98" y="374" class="copy">and parts forms enter one intake lane.</text>
+  <text x="98" y="374" class="copy">and parts forms move through</text>
+  <text x="98" y="398" class="copy">one intake lane.</text>
 
-  <rect x="370" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <rect x="365" y="230" width="250" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
   <text x="398" y="260" class="stepKicker">Stage 1</text>
   <text x="398" y="294" class="stepTitle">Register</text>
   <text x="398" y="326" class="copy">Capture source metadata, raw</text>
   <text x="398" y="350" class="copy">text excerpts, and lineage for</text>
-  <text x="398" y="374" class="copy">every document and record.</text>
+  <text x="398" y="374" class="copy">every incoming document.</text>
 
-  <rect x="670" y="230" width="240" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <rect x="660" y="230" width="260" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
   <text x="698" y="260" class="stepKicker">Stage 2</text>
   <text x="698" y="294" class="stepTitle">Extract</text>
   <text x="698" y="326" class="copy">Normalize asset, site, priority,</text>
   <text x="698" y="350" class="copy">category, cost, and routing</text>
   <text x="698" y="374" class="copy">fields for downstream use.</text>
 
-  <rect x="970" y="230" width="330" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
+  <rect x="955" y="230" width="350" height="154" rx="24" fill="#FFFFFF" stroke="#D7E2EC"/>
   <text x="998" y="260" class="stepKicker">Stage 3</text>
   <text x="998" y="294" class="stepTitle">Validate and publish</text>
-  <text x="998" y="326" class="copy">Check dates, required values, and field quality.</text>
-  <text x="998" y="350" class="copy">Separate approved rows from exceptions.</text>
-  <text x="998" y="374" class="copy">Export reporting-ready outputs.</text>
+  <text x="998" y="326" class="copy">Check dates, required values,</text>
+  <text x="998" y="350" class="copy">and field quality before release.</text>
+  <text x="998" y="374" class="copy">Publish clean outputs and exceptions.</text>
 
   <line x1="190" y1="384" x2="190" y2="400" stroke="#226FB2" stroke-width="6" stroke-linecap="round"/>
   <line x1="490" y1="384" x2="490" y2="400" stroke="#2A7FB1" stroke-width="6" stroke-linecap="round"/>
