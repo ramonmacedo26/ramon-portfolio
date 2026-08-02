@@ -146,6 +146,13 @@ a {
   font-size: 1.05rem;
 }
 
+.hero-note {
+  max-width: 64ch;
+  margin: 14px 0 0;
+  color: rgba(247, 245, 239, 0.68);
+  font-size: 0.94rem;
+}
+
 .cta-row,
 .project-links,
 .contact-links {
