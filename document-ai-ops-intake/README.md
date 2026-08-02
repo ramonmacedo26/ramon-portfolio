@@ -8,6 +8,13 @@ This project simulates a document-heavy intake workflow where work orders, techn
 
 Instead of treating document processing as a generic OCR showcase, the case frames it as an operational workflow problem: structure the intake, standardize important fields, isolate exceptions, and publish outputs that teams can actually work with.
 
+## Public Links
+
+- [Dashboard](outputs/dashboard.html)
+- [Project summary](outputs/case_summary.html)
+- [Case study](docs/case_study.html)
+- [Workflow diagram](outputs/architecture_flow.svg)
+
 ## Business Problem
 
 Many operations teams still depend on scattered files to receive and manage requests, updates, and field notes. That creates repetitive manual work, weak traceability, and a high chance of reporting from incomplete or invalid records.
@@ -67,6 +74,7 @@ Running the pipeline generates:
 - `outputs/validation_results.csv` - validation log
 - `outputs/dashboard.html` - local review dashboard
 - `outputs/case_summary.html` - short summary page
+- `docs/case_study.html` - full case narrative
 
 ## Repository Structure
 
@@ -75,6 +83,9 @@ document-ai-ops-intake/
   data/
     inbox/
     warehouse/
+  docs/
+    case_study.html
+    case_study.md
   outputs/
     architecture_flow.svg
     dashboard.html
