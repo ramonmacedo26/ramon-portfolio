@@ -1,11 +1,11 @@
-from pathlib import Path
+from pprint import pprint
+
+from ops_workflow_control_tower.pipeline import describe_scaffold
 
 
 def main() -> None:
-    root = Path(__file__).resolve().parents[1]
-    print("Ops Workflow Automation Control Tower scaffold")
-    print(f"Project root: {root}")
-    print("Pipeline implementation pending.")
+    print("Ops Workflow Automation Control Tower")
+    pprint(describe_scaffold())
 
 
 if __name__ == "__main__":

@@ -78,9 +78,15 @@ Together with the existing projects, it would strengthen the overall narrative:
 
 Scaffold created on August 4, 2026.
 
+Synthetic source inputs now added for:
+
+- field operations updates
+- planning updates
+- SLA watchlist updates
+
 Next steps:
 
-1. define the synthetic source model
-2. define validation and reconciliation rules
-3. build the first pipeline skeleton
-4. add initial output artifacts
+1. define validation and reconciliation rules
+2. build the first consolidated transformation layer
+3. add exception logic and reconciliation outputs
+4. add initial HTML artifacts

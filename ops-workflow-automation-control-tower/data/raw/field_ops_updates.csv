@@ -1,0 +1,6 @@
+update_batch,record_id,site,team,owner_name,workstream,status,backlog_count,completed_today,blocked_count,sla_risk,target_date,blocker_reason
+2026-08-04-AM,FO-1001,Campinas,Field Ops,Ana Costa,inspections,in_progress,14,3,1,medium,2026-08-06,waiting_parts
+2026-08-04-AM,FO-1002,Paulinia,Field Ops,Lucas Melo,corrective_maintenance,blocked,11,1,2,high,2026-08-05,awaiting_vendor
+2026-08-04-AM,FO-1003,Macae,Field Ops,Bruna Lima,work_orders,completed,9,5,0,low,2026-08-04,
+2026-08-04-AM,FO-1004,Vitoria,Field Ops,Diego Nunes,inspections,in_progress,7,2,0,medium,2026-08-07,
+2026-08-04-AM,FO-1005,Curitiba,Field Ops,Camila Rocha,work_orders,blocked,6,1,1,high,2026-08-05,missing_scope
