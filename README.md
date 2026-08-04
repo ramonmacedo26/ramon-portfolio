@@ -47,6 +47,7 @@ Highlights:
 - `industrial-data-ai-copilot/` - flagship industrial analytics case
 - `fabric-ops-analytics-platform/` - Fabric-aligned operations analytics case
 - `document-ai-ops-intake/` - document automation case
+- `ops-workflow-automation-control-tower/` - next automation-focused case scaffold
 - `og.png` - social sharing preview image
 
 ## Notes
