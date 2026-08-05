@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document AI Ops Intake | Project Summary</title>
+  <style>
+    :root {
+      --bg: #f3efe7;
+      --surface: #fffdfa;
+      --ink: #182738;
+      --muted: #607081;
+      --line: #dce4eb;
+      --accent: #8f4f2d;
+      --accent-soft: #f3b57a;
+      --shadow: 0 24px 64px rgba(18, 36, 55, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(143, 79, 45, 0.12), transparent 24%),
+        radial-gradient(circle at 82% 10%, rgba(243, 181, 122, 0.14), transparent 20%),
+        linear-gradient(180deg, #ebdfcf 0%, var(--bg) 58%, #f8f2ea 100%);
+      line-height: 1.6;
+    }
+    main { width: min(980px, calc(100% - 32px)); margin: 26px auto 44px; }
+    .hero, .card { border-radius: 28px; box-shadow: var(--shadow); }
+    .hero {
+      padding: 30px;
+      background: linear-gradient(145deg, #4f2b1e, #8f4f2d 58%, #b1703b);
+      color: #fffaf3;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ffd8b3;
+      font-weight: 700;
+    }
+    h1, h2, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2.2rem, 5vw, 3.3rem);
+      line-height: 1.06;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button-primary {
+      background: #fff3e7;
+      color: #5d311f;
+    }
+    .button-secondary {
+      border: 1px solid rgba(255, 243, 231, 0.28);
+      color: #fff3e7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    .label {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .metric {
+      margin: 10px 0 6px;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #5d311f;
+    }
+    .muted { color: var(--muted); }
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .stack span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff2e7;
+      border: 1px solid #f2d9c6;
+      color: #7a472b;
+      font-size: 0.92rem;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    li + li { margin-top: 8px; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Project Summary</p>
+      <h1>Document AI Ops Intake</h1>
+      <p>
+        Built a structured document intake workflow that transforms semi-structured maintenance and service records
+        into validated operational datasets, spreadsheet exports, and a review dashboard.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="dashboard.html">Open dashboard</a>
+        <a class="button button-secondary" href="../../index.html#projects">Back to portfolio</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Pipeline Output</div>
+        <p class="metric">18 approved records</p>
+        <p class="muted">
+          Clean records are normalized and exported into structured datasets ready for reporting, routing, and downstream operational use.
+        </p>
+      </article>
+      <article class="card">
+        <div class="label">Exception Handling</div>
+        <p class="metric">11 queued exceptions</p>
+        <p class="muted">
+          Invalid or incomplete entries are isolated into a review queue instead of contaminating trusted reporting outputs.
+        </p>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Top Normalized Categories</div>
+        <ul>
+          <li><strong>inspection:</strong> 5</li>
+          <li><strong>general_ops:</strong> 4</li>
+          <li><strong>electrical:</strong> 3</li>
+          <li><strong>mechanical:</strong> 2</li>
+          <li><strong>instrumentation:</strong> 2</li>
+          <li><strong>vendor_support:</strong> 2</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="label">Validation Issues Caught</div>
+        <ul>
+          <li><strong>missing_required_field:</strong> 7</li>
+          <li><strong>negative_value:</strong> 2</li>
+          <li><strong>invalid_numeric:</strong> 2</li>
+          <li><strong>invalid_priority:</strong> 1</li>
+          <li><strong>invalid_date:</strong> 1</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <div class="label">Stack</div>
+      <div class="stack">
+        <span>Python</span>
+        <span>SQLite</span>
+        <span>CSV</span>
+        <span>XLSX export</span>
+        <span>HTML dashboard</span>
+        <span>Document extraction</span>
+        <span>Validation rules</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

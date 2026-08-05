@@ -1,0 +1,38 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="36" fill="#FFF7EC"/>
+  <rect x="34" y="34" width="1132" height="712" rx="30" fill="#17342F"/>
+  <rect x="74" y="76" width="350" height="150" rx="24" fill="#F4E9D7"/>
+  <rect x="446" y="76" width="286" height="150" rx="24" fill="#F4E9D7"/>
+  <rect x="754" y="76" width="372" height="150" rx="24" fill="#F4E9D7"/>
+  <rect x="74" y="256" width="694" height="212" rx="24" fill="#F7F2EA"/>
+  <rect x="790" y="256" width="336" height="212" rx="24" fill="#F7F2EA"/>
+  <rect x="74" y="498" width="514" height="184" rx="24" fill="#F7F2EA"/>
+  <rect x="610" y="498" width="516" height="184" rx="24" fill="#F7F2EA"/>
+  <text x="96" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Sales vs Target</text>
+  <text x="96" y="165" fill="#17342F" font-family="Georgia, serif" font-size="44" font-weight="700">94.8%</text>
+  <text x="96" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">target attainment</text>
+  <text x="468" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Revenue</text>
+  <text x="468" y="165" fill="#17342F" font-family="Georgia, serif" font-size="40" font-weight="700">$4.82M</text>
+  <text x="468" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">month to date</text>
+  <text x="776" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Gap to Target</text>
+  <text x="776" y="165" fill="#17342F" font-family="Georgia, serif" font-size="40" font-weight="700">$260K</text>
+  <text x="776" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">focus for end-of-period recovery</text>
+  <text x="96" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Attainment Trend</text>
+  <path d="M114 414C182 388 241 360 307 352C372 344 413 374 482 326C545 283 622 301 728 288" stroke="#0F6C5C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M114 426C186 437 240 431 304 420C380 407 436 398 488 387C567 371 643 354 728 342" stroke="#CF6C2F" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <text x="812" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Top Regions</text>
+  <rect x="826" y="332" width="224" height="22" rx="11" fill="#D7EADF"/>
+  <rect x="826" y="374" width="188" height="22" rx="11" fill="#0F6C5C"/>
+  <rect x="826" y="416" width="148" height="22" rx="11" fill="#CF6C2F"/>
+  <text x="826" y="327" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">South</text>
+  <text x="826" y="369" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">Southeast</text>
+  <text x="826" y="411" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">Northeast</text>
+  <text x="96" y="540" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Performance Themes</text>
+  <text x="96" y="584" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• clear target tracking for leadership reviews</text>
+  <text x="96" y="616" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• variance visibility for corrective action</text>
+  <text x="96" y="648" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• simple layout suitable for portfolio storytelling</text>
+  <text x="632" y="540" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Power BI Value</text>
+  <text x="632" y="584" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">This case shows how business metrics can be turned</text>
+  <text x="632" y="614" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">into a compact scorecard for faster action and clearer</text>
+  <text x="632" y="644" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">communication across commercial teams.</text>
+</svg>

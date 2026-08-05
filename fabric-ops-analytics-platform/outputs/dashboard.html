@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabric Ops Analytics Platform</title>
+  <style>
+    :root {
+      --ink: #17212d;
+      --muted: #627182;
+      --line: #d7e0e8;
+      --blue: #0f8cff;
+      --teal: #0c9d7d;
+      --coral: #ff7b54;
+      --sand: #ffcc70;
+      --bg: #f4efe7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Segoe UI", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.2)),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 40px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #17324d, #245c8d 55%, #1d876d);
+      color: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 16px 50px rgba(19, 34, 56, 0.18);
+    }
+    .hero p { color: #deecfa; max-width: 760px; }
+    h1 { margin: 0 0 8px; font-size: 36px; letter-spacing: -0.03em; }
+    h2 { margin: 26px 0 12px; font-size: 22px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+    .card, .panel, .mini-card {
+      background: rgba(255, 252, 248, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(19, 34, 56, 0.06);
+    }
+    .card { padding: 18px; }
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .metric {
+      margin-top: 8px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #f5f8fb;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    td span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .bar {
+      height: 7px;
+      background: #e8eef5;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--teal), var(--blue));
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .triple {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr 0.9fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .panel {
+      overflow: hidden;
+    }
+    .panel-content {
+      padding: 18px;
+    }
+    .panel-content h3 {
+      margin: 18px 0 8px;
+      font-size: 16px;
+    }
+    .flow-image {
+      width: 100%;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: white;
+    }
+    .mini-grid {
+      display: grid;
+      gap: 12px;
+    }
+    .site-line {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .site-line span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .hbar {
+      height: 10px;
+      background: #e8ddd2;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .hbar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--coral), var(--sand));
+    }
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .priority-card {
+      padding: 14px;
+      border-radius: 16px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .priority-card span {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .priority-card strong { font-size: 26px; }
+    .priority-card small { opacity: 0.9; }
+    .priority-card.critical { background: linear-gradient(135deg, #b93827, #ff7b54); }
+    .priority-card.high { background: linear-gradient(135deg, #d18a00, #ffb84d); }
+    .priority-card.medium { background: linear-gradient(135deg, #0f8cff, #57b0ff); }
+    .priority-card.low { background: linear-gradient(135deg, #0c9d7d, #3fc4a2); }
+    .mini-card {
+      padding: 16px;
+    }
+    .mini-card p {
+      margin: 6px 0 0;
+    }
+    .mini-label {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .cards, .grid, .triple, .priority-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Fabric Ops Analytics Platform</h1>
+    <p>
+      Portfolio case study for a Microsoft Fabric style operations analytics platform with Bronze,
+      Silver, and Gold layers for backlog, SLA, downtime, workforce, and cost visibility.
+    </p>
+    <p><strong>Objective:</strong> turn disconnected service and maintenance extracts into a decision-ready operations scorecard.</p>
+  </section>
+
+  <section class="cards">
+    
+        <article class="card">
+          <div class="label">Open backlog</div>
+          <div class="metric">259</div>
+        </article>
+        
+
+        <article class="card">
+          <div class="label">Breached SLAs</div>
+          <div class="metric">100</div>
+        </article>
+        
+
+        <article class="card">
+          <div class="label">Downtime hours</div>
+          <div class="metric">195.6</div>
+        </article>
+        
+
+        <article class="card">
+          <div class="label">Avg utilization %</div>
+          <div class="metric">81.7</div>
+        </article>
+        
+  </section>
+
+  <section class="triple">
+    <section class="panel">
+      <div class="panel-content">
+        <h2>How to read this dashboard</h2>
+        <p>Start with global KPIs, compare site performance, then inspect backlog pressure, capacity strain, and quality gates.</p>
+        <h3>Architecture</h3>
+        <p>Raw extracts -> Bronze ingestion -> Silver validation -> Gold KPI models -> HTML scorecard.</p>
+        <img class="flow-image" src="architecture_flow.svg" alt="Architecture flowchart from raw CSV extracts to Bronze, Silver, Gold, and final outputs.">
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Cost exposure by site</h2>
+        <p>Shows where operational cost accumulation is building fastest across the network.</p>
+        
+        <div class="site-line">
+          <div>
+            <strong>RIO</strong>
+            <span>Rio Service Hub</span>
+          </div>
+          <div class="hbar"><span style="width:99%"></span></div>
+          <strong>$21,716</strong>
+        </div>
+        
+
+        <div class="site-line">
+          <div>
+            <strong>MCZ</strong>
+            <span>Macae Offshore Support</span>
+          </div>
+          <div class="hbar"><span style="width:100%"></span></div>
+          <strong>$21,906</strong>
+        </div>
+        
+
+        <div class="site-line">
+          <div>
+            <strong>VIX</strong>
+            <span>Vitoria Operations Base</span>
+          </div>
+          <div class="hbar"><span style="width:94%"></span></div>
+          <strong>$20,798</strong>
+        </div>
+        
+
+        <div class="site-line">
+          <div>
+            <strong>SSA</strong>
+            <span>Salvador Reliability Center</span>
+          </div>
+          <div class="hbar"><span style="width:86%"></span></div>
+          <strong>$18,839</strong>
+        </div>
+        
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-content">
+        <h2>Backlog by priority</h2>
+        <div class="priority-grid">
+        <div class="priority-card critical">
+          <span>Critical</span>
+          <strong>30</strong>
+          <small>30 breached</small>
+        </div>
+        
+
+        <div class="priority-card high">
+          <span>High</span>
+          <strong>70</strong>
+          <small>70 breached</small>
+        </div>
+        
+
+        <div class="priority-card medium">
+          <span>Medium</span>
+          <strong>94</strong>
+          <small>0 breached</small>
+        </div>
+        
+
+        <div class="priority-card low">
+          <span>Low</span>
+          <strong>65</strong>
+          <small>0 breached</small>
+        </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <h2>Site operations summary</h2>
+  <section class="panel">
+    <table>
+      <thead>
+        <tr>
+          <th>Site</th><th>Open backlog</th><th>SLA breaches</th><th>Avg utilization</th><th>Downtime</th><th>Cost</th><th>Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>RIO</strong><br><span>Rio Service Hub</span></td>
+          <td>67</td>
+          <td>26</td>
+          <td>80.3%</td>
+          <td>54.6</td>
+          <td>$21,716</td>
+          <td><strong>100</strong><div class='bar'><span style='width:100%'></span></div></td>
+        </tr>
+        
+
+        <tr>
+          <td><strong>MCZ</strong><br><span>Macae Offshore Support</span></td>
+          <td>62</td>
+          <td>23</td>
+          <td>84.3%</td>
+          <td>47.6</td>
+          <td>$21,906</td>
+          <td><strong>100</strong><div class='bar'><span style='width:100%'></span></div></td>
+        </tr>
+        
+
+        <tr>
+          <td><strong>VIX</strong><br><span>Vitoria Operations Base</span></td>
+          <td>65</td>
+          <td>27</td>
+          <td>78.4%</td>
+          <td>50.0</td>
+          <td>$20,798</td>
+          <td><strong>100</strong><div class='bar'><span style='width:100%'></span></div></td>
+        </tr>
+        
+
+        <tr>
+          <td><strong>SSA</strong><br><span>Salvador Reliability Center</span></td>
+          <td>65</td>
+          <td>24</td>
+          <td>83.7%</td>
+          <td>43.4</td>
+          <td>$18,839</td>
+          <td><strong>100</strong><div class='bar'><span style='width:100%'></span></div></td>
+        </tr>
+        </tbody>
+    </table>
+  </section>
+
+  <section class="grid">
+    <div>
+      <h2>Top technician workload signals</h2>
+      <div class="mini-grid">
+        <article class="mini-card">
+          <div class="mini-label">T-402 - SSA</div>
+          <strong>Hugo Nunes</strong>
+          <p>electrical</p>
+          <p>86.0% utilization | 8.2h overtime</p>
+        </article>
+        
+
+        <article class="mini-card">
+          <div class="mini-label">T-201 - MCZ</div>
+          <strong>Carlos Dias</strong>
+          <p>rotating</p>
+          <p>84.6% utilization | 16.4h overtime</p>
+        </article>
+        
+
+        <article class="mini-card">
+          <div class="mini-label">T-202 - MCZ</div>
+          <strong>Daniela Rocha</strong>
+          <p>inspection</p>
+          <p>84.0% utilization | 22.0h overtime</p>
+        </article>
+        
+
+        <article class="mini-card">
+          <div class="mini-label">T-401 - SSA</div>
+          <strong>Gabriela Reis</strong>
+          <p>reliability</p>
+          <p>81.4% utilization | 7.6h overtime</p>
+        </article>
+        
+
+        <article class="mini-card">
+          <div class="mini-label">T-101 - RIO</div>
+          <strong>Ana Costa</strong>
+          <p>electrical</p>
+          <p>80.6% utilization | 6.2h overtime</p>
+        </article>
+        </div>
+    </div>
+    <div>
+      <h2>Backlog and data quality</h2>
+      <section class="panel">
+        <div class="panel-content">
+          <p>This layer summarizes open work concentration by priority and highlights source issues caught before business consumption.</p>
+          <h3>Priority backlog</h3>
+          <ul><li><strong>critical</strong>: 30 open, 30 breached</li>
+<li><strong>high</strong>: 70 open, 70 breached</li>
+<li><strong>medium</strong>: 94 open, 0 breached</li>
+<li><strong>low</strong>: 65 open, 0 breached</li></ul>
+          <h3>Quality issues caught</h3>
+          <ul><li><strong>ticket_quality</strong>: 1</li>
+<li><strong>shift_quality</strong>: 1</li>
+<li><strong>downtime_quality</strong>: 1</li>
+<li><strong>cost_quality</strong>: 1</li></ul>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer>Generated at 2026-07-31T19:46:03+00:00 from local synthetic data. No client or employer data is included.</footer>
+</main>
+</body>
+</html>

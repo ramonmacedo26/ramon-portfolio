@@ -1,45 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" fill="none">
   <defs>
-    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0b2545"/>
-      <stop offset="100%" stop-color="#1665ad"/>
+    <linearGradient id="bg" x1="86" y1="52" x2="1116" y2="566" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D2032"/>
+      <stop offset="0.52" stop-color="#143E62"/>
+      <stop offset="1" stop-color="#115C4B"/>
     </linearGradient>
+    <linearGradient id="risk" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F05A4F"/>
+      <stop offset="1" stop-color="#FDBB57"/>
+    </linearGradient>
+    <linearGradient id="healthy" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#2EAD7B"/>
+      <stop offset="1" stop-color="#63D4A4"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="620" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#102237" flood-opacity="0.14"/>
+    </filter>
     <style>
-      .title { font: 800 38px 'Segoe UI', Arial, sans-serif; fill: white; }
-      .subtitle { font: 400 18px 'Segoe UI', Arial, sans-serif; fill: #dcecff; }
-      .label { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #5f6b7a; letter-spacing: 1px; }
-      .metric { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: #102033; }
-      .section { font: 800 24px 'Segoe UI', Arial, sans-serif; fill: #102033; }
-      .asset { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #102033; }
-      .score { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #5f6b7a; }
+      .eyebrow { font: 700 13px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.8px; text-transform: uppercase; fill: #A8C8DE; }
+      .title { font: 800 40px 'Segoe UI', Arial, sans-serif; fill: #F3F8FC; }
+      .subtitle { font: 500 17px 'Segoe UI', Arial, sans-serif; fill: #D2E1EC; }
+      .label { font: 700 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.3px; text-transform: uppercase; fill: #6C7E90; }
+      .metric { font: 800 30px 'Segoe UI', Arial, sans-serif; fill: #11273D; }
+      .metric-note { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #5F7388; }
+      .panel-title { font: 800 22px 'Segoe UI', Arial, sans-serif; fill: #11273D; }
+      .asset { font: 700 15px 'Segoe UI', Arial, sans-serif; fill: #18324A; }
+      .score { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #5E7083; }
+      .foot { font: 500 12px 'Segoe UI', Arial, sans-serif; fill: #8A98A6; }
+      .small { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #EAF4FB; }
     </style>
   </defs>
-  <rect width="1200" height="620" fill="#eef3f8"/>
-  <rect x="40" y="38" width="1120" height="126" rx="24" fill="url(#hero)"/>
-  <text x="72" y="90" class="title">Industrial Data &amp; AI Copilot - Predictive Maintenance Analytics</text>
-  <text x="72" y="126" class="subtitle">Bronze/Silver/Gold pipeline · data quality checks · risk scoring · AI-style work-order briefs</text>
-  <rect x="60" y="186" width="1080" height="376" rx="22" fill="white" stroke="#d9e4ef"/>
-  <text x="72" y="220" class="section">Equipment health summary</text>
-  
-  <text x="72" y="210" class="asset">PUMP-101 - Primary Transfer Pump</text>
-  <rect x="72" y="226" width="500" height="18" rx="9" fill="#e7edf4"/>
-  <rect x="72" y="226" width="500" height="18" rx="9" fill="#b42318"/>
-  <text x="595" y="240" class="score">100/100 · critical · 33 anomalies · 1 open WOs</text>
 
-  <text x="72" y="282" class="asset">COMP-201 - Gas Compressor</text>
-  <rect x="72" y="298" width="500" height="18" rx="9" fill="#e7edf4"/>
-  <rect x="72" y="298" width="500" height="18" rx="9" fill="#b42318"/>
-  <text x="595" y="312" class="score">100/100 · critical · 15 anomalies · 1 open WOs</text>
+  <rect width="1200" height="620" rx="0" fill="#F3EFE7"/>
+  <g filter="url(#shadow)">
+    <rect x="36" y="42" width="1128" height="536" rx="32" fill="#F7FBFF"/>
+  </g>
 
-  <text x="72" y="354" class="asset">GEN-401 - Backup Generator</text>
-  <rect x="72" y="370" width="500" height="18" rx="9" fill="#e7edf4"/>
-  <rect x="72" y="370" width="345" height="18" rx="9" fill="#b54708"/>
-  <text x="595" y="384" class="score">69/100 · watch · 7 anomalies · 1 open WOs</text>
+  <rect x="68" y="72" width="1064" height="116" rx="24" fill="url(#bg)"/>
+  <text x="102" y="109" class="eyebrow">Industrial data • AI copilot • predictive maintenance</text>
+  <text x="102" y="149" class="title">Industrial Data &amp; AI Copilot</text>
+  <text x="102" y="176" class="subtitle">Bronze/Silver/Gold pipeline • quality checks • risk scoring • work-order briefs</text>
+  <rect x="896" y="103" width="200" height="52" rx="18" fill="rgba(255,255,255,0.12)"/>
+  <text x="922" y="125" class="small">Synthetic operations case</text>
+  <text x="922" y="146" class="small">No client or employer data</text>
 
-  <text x="72" y="426" class="asset">HX-301 - Heat Exchanger</text>
-  <rect x="72" y="442" width="500" height="18" rx="9" fill="#e7edf4"/>
-  <rect x="72" y="442" width="30" height="18" rx="9" fill="#027a48"/>
-  <text x="595" y="456" class="score">6/100 · healthy · 0 anomalies · 0 open WOs</text>
+  <rect x="86" y="220" width="214" height="116" rx="20" fill="#FFFFFF" stroke="#DCE6EF"/>
+  <text x="112" y="252" class="label">Critical assets</text>
+  <text x="112" y="295" class="metric">2</text>
+  <text x="112" y="319" class="metric-note">Immediate review recommended</text>
 
-  <text x="72" y="586" class="score">Generated from synthetic local data. No employer/client data included.</text>
+  <rect x="320" y="220" width="214" height="116" rx="20" fill="#FFFFFF" stroke="#DCE6EF"/>
+  <text x="346" y="252" class="label">Tracked anomalies</text>
+  <text x="346" y="295" class="metric">55</text>
+  <text x="346" y="319" class="metric-note">Across sensors, work orders, and checks</text>
+
+  <rect x="554" y="220" width="214" height="116" rx="20" fill="#FFFFFF" stroke="#DCE6EF"/>
+  <text x="580" y="252" class="label">Open work orders</text>
+  <text x="580" y="295" class="metric">4</text>
+  <text x="580" y="319" class="metric-note">Priority-ranked by asset risk</text>
+
+  <rect x="788" y="220" width="344" height="116" rx="20" fill="#11273D"/>
+  <text x="814" y="252" class="label" fill="#A8C8DE">Data quality coverage</text>
+  <rect x="814" y="280" width="292" height="12" rx="6" fill="#2B435B"/>
+  <rect x="814" y="280" width="245" height="12" rx="6" fill="#69D4A2"/>
+  <text x="814" y="313" class="small">Duplicates, nulls, invalid status, impossible readings</text>
+
+  <rect x="86" y="362" width="1046" height="178" rx="24" fill="#FFFFFF" stroke="#DCE6EF"/>
+  <text x="116" y="401" class="panel-title">Top risk assets</text>
+  <text x="116" y="425" class="score">Cleaned preview for the flagship dashboard card on the portfolio homepage.</text>
+
+  <text x="116" y="467" class="asset">COMP-201 · Air Compressor</text>
+  <rect x="116" y="482" width="622" height="14" rx="7" fill="#E4EBF2"/>
+  <rect x="116" y="482" width="622" height="14" rx="7" fill="url(#risk)"/>
+  <text x="760" y="494" class="score">100/100 · critical · 33 anomalies · 1 open WO</text>
+
+  <text x="116" y="522" class="asset">GEN-401 · Backup Generator</text>
+  <rect x="116" y="537" width="622" height="14" rx="7" fill="#E4EBF2"/>
+  <rect x="116" y="537" width="622" height="14" rx="7" fill="url(#risk)"/>
+  <text x="760" y="549" class="score">100/100 · critical · 15 anomalies · 1 open WO</text>
+
+  <text x="760" y="467" class="asset">HTX-301 · Heat Exchanger</text>
+  <rect x="760" y="482" width="308" height="14" rx="7" fill="#E4EBF2"/>
+  <rect x="760" y="482" width="212" height="14" rx="7" fill="url(#risk)"/>
+  <text x="760" y="516" class="score">69/100 · watchlist · 7 anomalies · 1 open WO</text>
+
+  <text x="760" y="539" class="asset">PMP-110 · Cooling Pump</text>
+  <rect x="760" y="554" width="308" height="14" rx="7" fill="#E4EBF2"/>
+  <rect x="760" y="554" width="124" height="14" rx="7" fill="url(#healthy)"/>
+  <text x="760" y="588" class="score">40/100 · healthy · 2 anomalies · monitor only</text>
+
+  <text x="86" y="592" class="foot">Generated from synthetic industrial data for portfolio use.</text>
 </svg>

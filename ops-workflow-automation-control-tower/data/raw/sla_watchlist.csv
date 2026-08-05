@@ -1,0 +1,6 @@
+update_batch,record_id,site,team,owner_name,workstream,status,backlog_count,completed_today,blocked_count,sla_risk,target_date,blocker_reason
+2026-08-04-AM,SLA-3001,Campinas,SLA Desk,Helena Prado,urgent_followup,in_progress,5,1,0,high,2026-08-05,
+2026-08-04-AM,SLA-3002,Paulinia,SLA Desk,Igor Pires,urgent_followup,blocked,4,0,1,high,2026-08-04,customer_approval
+2026-08-04-AM,SLA-3003,Macae,SLA Desk,Laura Freitas,escalation_review,in_progress,6,2,0,medium,2026-08-06,
+2026-08-04-AM,SLA-3004,Vitoria,SLA Desk,Gustavo Prado,urgent_followup,completed,3,3,0,low,2026-08-04,
+2026-08-04-AM,SLA-3005,Curitiba,SLA Desk,Natalia Moraes,in_progress,in_progress,7,1,1,medium,2026-08-06,priority_conflict

@@ -1,76 +1,69 @@
 # Ramon Macedo Portfolio
 
-Static portfolio site prepared for GitHub Pages.
+Public portfolio for Data Engineering, Industrial Analytics, and AI Automation work.
 
-## What is inside
+Live site:
+- [ramonmacedo26.github.io/ramon-portfolio](https://ramonmacedo26.github.io/ramon-portfolio/)
 
-- `index.html`: main portfolio landing page
-- `styles.css`: portfolio styling
-- `assets/`: public files used by the site
-- `industrial-data-ai-copilot/`: flagship case
-- `fabric-ops-analytics-platform/`: Fabric-focused analytics case
-- `document-ai-ops-intake/`: document automation case
-- `og.png`: social preview image
+## Overview
 
-## Ready for GitHub Pages
+This repository brings together selected portfolio projects built around a consistent theme: turning operational data into structured reporting, analytics layers, and automation workflows that help teams act faster and with less manual effort.
 
-This folder is already structured to work as a static site on GitHub Pages.
+The site is intentionally simple and static. The goal is not to showcase framework complexity, but to present project thinking, delivery structure, and business-facing outputs clearly.
 
-Key points:
+## Featured Projects
 
-- all main links are relative
-- public assets live inside this folder
-- no build step is required
-- `.nojekyll` is included to avoid GitHub Pages processing quirks
+### Industrial Data & AI Copilot
 
-## Recommended publishing path
+Predictive maintenance case built to show how raw operational records can be ingested, validated, modeled through Bronze, Silver, and Gold layers, and translated into risk visibility plus AI-style maintenance recommendations.
 
-Option 1: project site
+Highlights:
+- local warehouse and medallion-style modeling
+- data quality checks across operational inputs
+- dashboard output and recruiter-friendly case narrative
 
-Use a normal repository such as:
+### Fabric Ops Analytics Platform
 
-- `ramon-portfolio`
-- `ramonmacedo-portfolio`
+Operations analytics case inspired by Microsoft Fabric and lakehouse thinking, focused on backlog visibility, SLA exposure, technician load, downtime, and cost concentration.
 
-Your URL will look like:
+Highlights:
+- Bronze, Silver, and Gold reporting flow
+- multi-site KPI modeling
+- executive-style dashboard output
 
-- `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`
+### Document AI Ops Intake
 
-Option 2: user site
+Document automation case built around semi-structured operational records, with validation, exception handling, and spreadsheet-ready outputs for downstream use.
 
-Use a repository named exactly:
+Highlights:
+- structured intake workflow
+- exception queue and validation layer
+- reporting-ready exports and dashboard summary
 
-- `YOUR-USERNAME.github.io`
+### Power BI Portfolio Cases
 
-In that case, the portfolio will open directly at:
+Three Power BI case pages that package dashboard work into recruiter-friendly portfolio stories:
 
-- `https://YOUR-USERNAME.github.io/`
+- Sales vs Target
+- OTIF Logistics Dashboard
+- People Analytics
 
-## Simple publish steps
+## Repository Structure
 
-1. Create a GitHub repository.
-2. Upload the contents of this `portfolio` folder as the repository root.
-3. In GitHub, open `Settings` -> `Pages`.
-4. Under `Build and deployment`, choose:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main`
-   - `Folder`: `/ (root)`
-5. Save and wait for GitHub Pages to publish.
+- `index.html` - main portfolio homepage
+- `styles.css` - shared site styling
+- `industrial-data-ai-copilot/` - flagship industrial analytics case
+- `fabric-ops-analytics-platform/` - Fabric-aligned operations analytics case
+- `document-ai-ops-intake/` - document automation case
+- `ops-workflow-automation-control-tower/` - next automation-focused case scaffold
+- `powerbi-sales-vs-target/` - commercial performance Power BI case
+- `powerbi-otif-logistics/` - OTIF and logistics Power BI case
+- `powerbi-people-analytics/` - workforce reporting Power BI case
+- `og.png` - social sharing preview image
 
-## Important note
+## Notes
 
-If you publish this as a project site, keep the whole contents of this folder at the repository root.
+- This repository is published as a static GitHub Pages site.
+- Project outputs use synthetic or portfolio-safe data only.
+- No employer or client-sensitive information is included.
 
-Do not upload the parent folder `carreira` as the Pages root, otherwise the links will not match the intended site structure.
-
-## Suggested first public version
-
-The cleanest first release is:
-
-- homepage
-- flagship dashboard
-- Fabric dashboard
-- document automation dashboard
-- public CV
-
-That is already enough for a strong first online portfolio.

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Data & AI Copilot | Project Summary</title>
+  <style>
+    :root {
+      --bg: #f2ece2;
+      --surface: #fffdf8;
+      --ink: #172537;
+      --muted: #607081;
+      --line: #dbe4ed;
+      --accent: #0f6c5c;
+      --accent-dark: #12324f;
+      --warm: #cf6c2f;
+      --shadow: 0 24px 64px rgba(18, 36, 55, 0.12);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at top left, rgba(15, 108, 92, 0.14), transparent 28%),
+        radial-gradient(circle at 82% 10%, rgba(207, 108, 47, 0.14), transparent 24%),
+        linear-gradient(180deg, #ece1cf 0%, var(--bg) 58%, #f6f1e8 100%);
+    }
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 26px auto 44px;
+    }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 30px;
+      background:
+        linear-gradient(145deg, rgba(24, 42, 60, 0.98), rgba(19, 74, 65, 0.95)),
+        var(--surface);
+      color: #f6f8fb;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #f0b67f;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2.2rem, 5vw, 3.3rem);
+      line-height: 1.05;
+    }
+    .lede {
+      max-width: 62ch;
+      color: rgba(246, 248, 251, 0.84);
+      font-size: 1.02rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button-primary {
+      background: #f7f2e9;
+      color: #17342f;
+    }
+    .button-secondary {
+      border: 1px solid rgba(247, 245, 239, 0.28);
+      color: #f7f5ef;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .card {
+      padding: 24px;
+    }
+    .label {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--warm);
+      font-weight: 700;
+    }
+    .metric {
+      margin: 10px 0 4px;
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--accent-dark);
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li + li {
+      margin-top: 8px;
+    }
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .stack span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef5f2;
+      border: 1px solid #d7e8e2;
+      font-size: 0.92rem;
+      color: #20483f;
+    }
+    .risk-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 8px;
+    }
+    .risk-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: #f8fbfd;
+      border: 1px solid var(--line);
+    }
+    .risk-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Project Summary</p>
+      <h1>Industrial Data &amp; AI Copilot</h1>
+      <p class="lede">
+        Built a local predictive maintenance case that turns raw operational files into governed data layers,
+        quality-checked datasets, asset risk visibility, and AI-style maintenance recommendations.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="dashboard.html">Open dashboard</a>
+        <a class="button button-secondary" href="../../index.html#projects">Back to portfolio</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Recruiter View</div>
+        <p class="metric">Bronze / Silver / Gold</p>
+        <p class="muted">
+          The pipeline ingests raw CSV files into Bronze, applies validation and cleanup rules in Silver,
+          then publishes Gold summaries for equipment health, work-order prioritization, and risk scoring.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="label">Quality Checks</div>
+        <p class="metric">4 source domains</p>
+        <p class="muted">
+          The demo reconciles sensor readings, maintenance orders, work reports, and cost events before exposing them to business-facing outputs.
+        </p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 18px;">
+      <div class="label">Highest Risk Assets</div>
+      <div class="risk-list">
+        <div class="risk-item">
+          <strong>PUMP-101 · Primary Transfer Pump</strong>
+          <span class="muted">Risk 100/100 · critical · vibration-related anomalies</span>
+        </div>
+        <div class="risk-item">
+          <strong>COMP-201 · Gas Compressor</strong>
+          <span class="muted">Risk 100/100 · critical · pressure and temperature anomalies</span>
+        </div>
+        <div class="risk-item">
+          <strong>GEN-401 · Backup Generator</strong>
+          <span class="muted">Risk 69/100 · watchlist · energy-related signal drift</span>
+        </div>
+        <div class="risk-item">
+          <strong>HX-301 · Heat Exchanger</strong>
+          <span class="muted">Risk 6/100 · healthy · low issue density</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Data Quality Issues Caught</div>
+        <ul>
+          <li><strong>sensor_quality:</strong> 3 records flagged before downstream use</li>
+          <li><strong>work_order_quality:</strong> 1 inconsistency isolated for review</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="label">Stack</div>
+        <div class="stack">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>SQLite</span>
+          <span>Data quality checks</span>
+          <span>Medallion modeling</span>
+          <span>HTML dashboard</span>
+          <span>AI-style summaries</span>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

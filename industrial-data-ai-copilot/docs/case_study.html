@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Data & AI Copilot | Case Study</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --surface: rgba(255, 251, 245, 0.9);
+      --ink: #182738;
+      --muted: #607081;
+      --line: rgba(32, 44, 58, 0.12);
+      --accent: #0f6c5c;
+      --warm: #cf6c2f;
+      --shadow: 0 24px 64px rgba(18, 36, 55, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(15, 108, 92, 0.12), transparent 24%),
+        linear-gradient(180deg, #e9ddca 0%, var(--bg) 55%, #f7f1e8 100%);
+      line-height: 1.65;
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 28px auto 44px;
+    }
+    .hero, .block {
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 32px;
+      background: linear-gradient(145deg, #1a3148, #0f6c5c);
+      color: #f7fbff;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #f3b57a;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    h1, h2, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+      line-height: 1.08;
+    }
+    .hero p {
+      max-width: 64ch;
+      color: rgba(247, 251, 255, 0.86);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button-primary {
+      background: #f6f1e8;
+      color: #17342f;
+    }
+    .button-secondary {
+      color: #f6f1e8;
+      border: 1px solid rgba(246, 241, 232, 0.28);
+    }
+    .flow {
+      display: grid;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .block {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    h2 {
+      margin-bottom: 8px;
+      font-size: 1.32rem;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li + li {
+      margin-top: 8px;
+    }
+    .result {
+      border-left: 5px solid var(--accent);
+    }
+    .muted {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Case Study</p>
+      <h1>Industrial Data &amp; AI Copilot</h1>
+      <p>
+        A compact predictive maintenance case built to show how raw operational records can be structured,
+        validated, modeled, and translated into business-friendly maintenance decisions.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="../outputs/dashboard.html">Open dashboard</a>
+        <a class="button button-secondary" href="../../index.html#projects">Back to portfolio</a>
+      </div>
+    </section>
+
+    <section class="flow">
+      <article class="block">
+        <h2>Situation</h2>
+        <p class="muted">
+          Maintenance and operations teams often receive sensor logs, work orders, cost events, and inspection reports in separate files.
+          That creates slow prioritization, manual reconciliation, and weak visibility into which assets deserve attention first.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Task</h2>
+        <p class="muted">
+          Build a small but realistic data product that ingests raw operational files, validates them,
+          creates analytics-ready tables, and produces clear maintenance recommendations for non-technical users.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Action</h2>
+        <ul>
+          <li>Generated synthetic industrial data with deliberate quality issues to make validation meaningful.</li>
+          <li>Loaded raw files into Bronze tables without over-modeling too early.</li>
+          <li>Created Silver layers with validation flags and a centralized quality log.</li>
+          <li>Modeled Gold summaries for equipment health, cost exposure, open work orders, and risk scoring.</li>
+          <li>Produced AI-style work-order briefs from operational reports and maintenance context.</li>
+          <li>Rendered a static HTML dashboard aimed at recruiters and hiring managers.</li>
+        </ul>
+      </article>
+
+      <article class="block result">
+        <h2>Result</h2>
+        <p class="muted">
+          The final output makes it possible to identify high-risk equipment, understand why each asset is risky,
+          and act on open work orders without manually reading every source file.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Stack</h2>
+        <p class="muted">
+          Python, SQL, SQLite, HTML/CSS, data quality checks, medallion architecture, operational analytics, and AI-style summarization.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document AI Ops Intake | Case Study</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --ink: #17304b;
+      --muted: #5d7389;
+      --line: #d7e3ee;
+      --accent: #1f6ea8;
+      --accent-2: #1e9b83;
+      --shadow: 0 24px 60px rgba(17, 39, 61, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(31, 110, 168, 0.14), transparent 22%),
+        radial-gradient(circle at 82% 10%, rgba(30, 155, 131, 0.12), transparent 18%),
+        linear-gradient(180deg, #ecf4fa 0%, var(--bg) 55%, #f8fbfd 100%);
+      color: var(--ink);
+      line-height: 1.68;
+    }
+    main {
+      width: min(1080px, calc(100% - 32px));
+      margin: 26px auto 44px;
+    }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+    .hero {
+      padding: 30px;
+      background: linear-gradient(145deg, #123b60, #1f6ea8 58%, #1e9b83);
+      color: #f7fbff;
+      border: none;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #bfe7ff;
+      font-weight: 700;
+    }
+    h1, h2, p {
+      margin-top: 0;
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.06;
+    }
+    .hero p {
+      max-width: 780px;
+      color: rgba(247, 251, 255, 0.9);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button-primary {
+      background: #f5fbff;
+      color: #164567;
+    }
+    .button-secondary {
+      border: 1px solid rgba(245, 251, 255, 0.28);
+      color: #f5fbff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card {
+      padding: 24px;
+    }
+    .label {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .metric {
+      margin: 10px 0 8px;
+      font-size: 1.95rem;
+      font-weight: 800;
+      color: #14415f;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .stack span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef7fc;
+      border: 1px solid #d4e7f5;
+      color: #18527a;
+      font-size: 0.92rem;
+    }
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li {
+      margin-top: 8px;
+    }
+    .flow {
+      margin-top: 18px;
+    }
+    .flow img {
+      width: 100%;
+      display: block;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: #f9fcff;
+    }
+    @media (max-width: 820px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Case Study</p>
+      <h1>Document AI Ops Intake</h1>
+      <p>
+        A document-heavy operations workflow designed to transform mixed maintenance and service records into validated,
+        structured datasets, exception queues, and spreadsheet-ready outputs for downstream business use.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="../outputs/dashboard.html">Open dashboard</a>
+        <a class="button button-secondary" href="../outputs/case_summary.html">Open summary</a>
+        <a class="button button-secondary" href="../../index.html#projects">Back to portfolio</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Problem Framing</div>
+        <p class="metric">Document intake is a process problem, not only an extraction problem.</p>
+        <p class="muted">
+          Operational teams often receive requests and updates through scattered files with weak structure and uneven data quality.
+          The real need is to convert those inputs into a controlled workflow that can be reviewed, validated, and reused.
+        </p>
+      </article>
+      <article class="card">
+        <div class="label">Published Outputs</div>
+        <ul>
+          <li><strong>18 approved records</strong> ready for business use</li>
+          <li><strong>11 queued exceptions</strong> isolated for review</li>
+          <li><strong>CSV, XLSX, SQLite, and HTML</strong> delivery formats</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card flow">
+      <div class="label">Workflow</div>
+      <p class="muted">
+        The intake lane registers every file, extracts operational fields, applies normalization, validates the result,
+        and publishes clean records separately from exceptions.
+      </p>
+      <img src="../outputs/architecture_flow.svg" alt="Document AI workflow diagram">
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Pipeline Sequence</div>
+        <ol>
+          <li>Generate a synthetic inbox with multiple operational document types.</li>
+          <li>Register files in an intake layer with metadata and traceability.</li>
+          <li>Extract fields such as asset, site, priority, category, cost, and routing.</li>
+          <li>Normalize values into a consistent reporting structure.</li>
+          <li>Apply validation before publication.</li>
+          <li>Split approved rows from exceptions.</li>
+          <li>Publish spreadsheet-ready outputs and a lightweight dashboard.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <div class="label">Why The Control Layer Matters</div>
+        <ul>
+          <li>Missing asset references are caught before reporting.</li>
+          <li>Invalid priorities and malformed dates do not pass silently.</li>
+          <li>Negative quantities or costs are isolated for review.</li>
+          <li>Business users still receive outputs in formats they can work with immediately.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="label">Portfolio Relevance</div>
+        <p class="muted">
+          This case supports a stronger Data, AI, and Automation narrative because it shows how semi-structured business
+          inputs can be transformed into validated, repeatable operational outputs instead of remaining trapped in manual review loops.
+        </p>
+      </article>
+      <article class="card">
+        <div class="label">Stack</div>
+        <div class="stack">
+          <span>Python</span>
+          <span>SQLite</span>
+          <span>CSV</span>
+          <span>XLSX export</span>
+          <span>HTML dashboard</span>
+          <span>Validation rules</span>
+          <span>Document extraction</span>
+          <span>Workflow automation</span>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

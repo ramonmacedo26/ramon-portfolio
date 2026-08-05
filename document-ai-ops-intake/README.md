@@ -1,50 +1,58 @@
 # Document AI Ops Intake
 
-Portfolio case study by Ramon Macedo.
+Document automation portfolio case built around semi-structured operational records, validation controls, and spreadsheet-ready outputs for downstream business use.
 
-This project simulates a document-heavy operational workflow where requests, reports, checklists, and parts forms arrive in different formats and need to be turned into clean, traceable data before anyone can report on them or act on them.
+## Overview
 
-Instead of treating document processing as a generic OCR demo, this case frames it as an operations problem: consolidate fragmented inputs, standardize the data, catch bad records early, and publish a usable spreadsheet for downstream teams.
+This project simulates a document-heavy intake workflow where work orders, technician reports, inspection files, vendor requests, and parts forms arrive in mixed formats and need to be transformed into a trusted structured dataset.
 
-No employer or client data is included. Every source file is synthetic and purposely includes incomplete fields, awkward wording, and invalid values so the control layer has realistic exceptions to catch.
+Instead of treating document processing as a generic OCR showcase, the case frames it as an operational workflow problem: structure the intake, standardize important fields, isolate exceptions, and publish outputs that teams can actually work with.
 
-## What this case proves
+## Public Links
 
-- I can design a practical intake workflow for semi-structured business documents.
-- I can extract operational fields from mixed text and tabular inputs.
-- I can apply data quality checks before the output reaches business users.
-- I can separate approved records from items that need review.
-- I can package the result in formats people actually use: CSV, XLSX, SQLite, and a lightweight dashboard.
+- [Dashboard](outputs/dashboard.html)
+- [Project summary](outputs/case_summary.html)
+- [Case study](docs/case_study.html)
+- [Workflow diagram](outputs/architecture_flow.svg)
 
-## Business context
+## Business Problem
 
-Many operations teams still receive maintenance requests, technician notes, inspection results, vendor updates, and parts demands through scattered files. The work is repetitive, the structure is inconsistent, and important details are easy to miss.
+Many operations teams still depend on scattered files to receive and manage requests, updates, and field notes. That creates repetitive manual work, weak traceability, and a high chance of reporting from incomplete or invalid records.
 
-The point of this project is to show how that intake can be standardized into a repeatable workflow:
+This case shows how to make that process more reliable by:
 
-- collect incoming documents;
-- capture the fields that matter;
-- validate the results;
-- route exceptions for review;
-- publish a trusted structured dataset.
+- registering incoming documents consistently
+- extracting operationally useful fields
+- validating the result before publication
+- separating exceptions from approved records
+- delivering spreadsheet-ready outputs and a quick review dashboard
 
-## Workflow overview
+## What This Project Demonstrates
+
+- document intake workflow design for semi-structured business records
+- field extraction from mixed text and tabular files
+- validation rules before business consumption
+- exception queue handling
+- export packaging across CSV, XLSX, SQLite, and HTML
+- a strong `Data + AI + Automation` narrative grounded in operational use cases
+
+## Workflow
 
 ![Architecture flow](outputs/architecture_flow.svg)
 
 Pipeline stages:
 
-1. Generate a synthetic inbox with operational documents across five document groups.
-2. Register each file in a Bronze-style intake layer with source metadata and raw text excerpts.
-3. Extract key fields such as asset, site, priority, status, issue category, cost, and downtime.
-4. Normalize labels and assign routing fields such as `route_to_team`, `urgency_flag`, and `severity_score`.
-5. Validate required fields, dates, and numeric values.
-6. Split the result into approved records and an exception queue.
-7. Export spreadsheet-ready outputs plus a dashboard and validation log.
+1. generate a synthetic inbox with multiple document types
+2. register each file in a Bronze-style intake layer
+3. extract fields such as asset, site, priority, category, cost, and downtime
+4. normalize labels and assign routing metadata
+5. validate dates, required fields, and numeric values
+6. split approved records from review exceptions
+7. publish spreadsheet-ready outputs and a dashboard
 
-## Inputs
+## Input Types
 
-The generated inbox includes five realistic document groups:
+The synthetic inbox includes:
 
 - maintenance work orders in `.txt`
 - technician service reports in `.md`
@@ -52,26 +60,58 @@ The generated inbox includes five realistic document groups:
 - vendor request messages in `.txt`
 - spare-parts request exports in `.csv`
 
-These files are intentionally mixed because real intake workflows are rarely clean or uniform.
+The variety is intentional because real operational intake processes are usually inconsistent.
 
 ## Outputs
 
-Running the pipeline produces:
+Running the pipeline generates:
 
-- `data/warehouse/document_ai_ops.db`: local SQLite warehouse
-- `outputs/master_operational_intake.csv`: approved structured records
-- `outputs/master_operational_intake.xlsx`: spreadsheet output for business users
-- `outputs/exceptions_queue.csv`: records that need manual review
-- `outputs/exceptions_queue.xlsx`: spreadsheet version of the exception queue
-- `outputs/validation_results.csv`: detailed issue log
-- `outputs/dashboard.html`: local dashboard for quick review
-- `outputs/case_summary.md`: recruiter-facing summary
+- `data/warehouse/document_ai_ops.db` - local warehouse
+- `outputs/master_operational_intake.csv` - approved structured records
+- `outputs/master_operational_intake.xlsx` - spreadsheet output for business users
+- `outputs/exceptions_queue.csv` - review queue
+- `outputs/exceptions_queue.xlsx` - spreadsheet exception queue
+- `outputs/validation_results.csv` - validation log
+- `outputs/dashboard.html` - local review dashboard
+- `outputs/case_summary.html` - short summary page
+- `docs/case_study.html` - full case narrative
 
-## Why the validation layer matters
+## Repository Structure
 
-The strongest part of the case is not just extraction. It is control.
+```text
+document-ai-ops-intake/
+  data/
+    inbox/
+    warehouse/
+  docs/
+    case_study.html
+    case_study.md
+  outputs/
+    architecture_flow.svg
+    dashboard.html
+    case_summary.html
+    master_operational_intake.csv
+    exceptions_queue.csv
+    validation_results.csv
+  scripts/
+    generate_documents.py
+    run_pipeline.py
+  src/
+    document_ai_ops/
+      config.py
+      extraction.py
+      validation.py
+      export.py
+      pipeline.py
+  tests/
+    test_pipeline.py
+```
 
-The pipeline flags issues such as:
+## Why The Validation Layer Matters
+
+The strongest part of this case is not only extraction. It is control.
+
+The pipeline is designed to catch issues such as:
 
 - missing asset references
 - invalid priorities
@@ -79,24 +119,25 @@ The pipeline flags issues such as:
 - malformed dates
 - incomplete vendor requests
 
-That makes the output more believable because the workflow does not pretend every input is clean.
+That makes the workflow more believable because it does not assume every document is already clean.
 
-## How to run it
+## Quick Start
 
 From this folder:
 
 ```powershell
-& 'C:\Users\Windows 10\AppData\Local\Programs\Python\Python312\python.exe' .\scripts\run_pipeline.py
-& 'C:\Users\Windows 10\AppData\Local\Programs\Python\Python312\python.exe' -m unittest discover -s .\tests
+python .\scripts\run_pipeline.py
+python -m unittest discover -s .\tests
 ```
 
-## Why this belongs in the portfolio
+## Why This Case Matters
 
-This case helps tell a clearer `Data + AI + Automation` story because it is easy to explain in business terms:
+This project helps make the automation story in the portfolio much clearer. It shows how repetitive, document-heavy work can be structured into a reliable process that reduces manual effort and produces outputs the business can use immediately.
 
-- documents come in messy;
-- the workflow structures them;
-- quality checks protect the output;
-- stakeholders receive something they can use immediately.
+That makes it especially relevant for roles involving:
 
-That is much closer to real enterprise work than a generic chatbot or a one-off notebook.
+- internal workflow automation
+- operational analytics enablement
+- document-driven intake processes
+- AI-assisted data preparation
+

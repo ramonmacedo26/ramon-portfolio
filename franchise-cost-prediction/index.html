@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franchise Cost Prediction</title>
+    <meta
+      name="description"
+      content="Static portfolio demo that estimates franchise startup cost from annual revenue."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Demo / Static Frontend</p>
+          <h1>Franchise Initial Cost Prediction</h1>
+          <p class="hero-text">
+            An interactive decision-support demo that estimates franchise startup
+            cost from annual revenue. The experience is intentionally product-like:
+            clean inputs, instant feedback, business framing, and a visual model.
+          </p>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-label">Model type</span>
+          <strong>Linear Regression</strong>
+          <span class="badge-note">Calculated directly in the browser</span>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="panel control-panel">
+          <div class="panel-heading">
+            <p class="panel-kicker">Simulation</p>
+            <h2>Adjust the revenue scenario</h2>
+          </div>
+
+          <label class="field">
+            <span>Annual franchise revenue</span>
+            <input
+              id="revenueRange"
+              type="range"
+              min="700"
+              max="2063"
+              step="25"
+              value="1137"
+            />
+          </label>
+
+          <label class="field">
+            <span>Fine-tune revenue</span>
+            <input
+              id="revenueInput"
+              type="number"
+              min="700"
+              max="2063"
+              step="25"
+              value="1137"
+            />
+          </label>
+
+          <div class="quick-stats">
+            <div class="quick-stat">
+              <span class="quick-label">Dataset range</span>
+              <strong id="rangeLabel">R$ 700,00 to R$ 1.375,00</strong>
+            </div>
+            <div class="quick-stat">
+              <span class="quick-label">Current scenario</span>
+              <strong id="currentRevenueLabel">R$ 1.137,00</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel prediction-panel">
+          <div class="panel-heading">
+            <p class="panel-kicker">Forecast</p>
+            <h2>Estimated startup cost</h2>
+          </div>
+
+          <div class="prediction-value" id="predictedCost">R$ 0,00</div>
+          <p class="prediction-text" id="predictionText"></p>
+
+          <div class="insight-card" id="insightCard"></div>
+        </section>
+      </main>
+
+      <section class="metric-grid" aria-label="Project metrics">
+        <article class="metric-card">
+          <span class="metric-label">Observations</span>
+          <strong class="metric-value" id="metricObservations">0</strong>
+          <p class="metric-note">Rows available in the sample dataset.</p>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Average Revenue</span>
+          <strong class="metric-value" id="metricAvgRevenue">R$ 0,00</strong>
+          <p class="metric-note">Typical annual revenue across the sample.</p>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Average Cost</span>
+          <strong class="metric-value" id="metricAvgCost">R$ 0,00</strong>
+          <p class="metric-note">Baseline cost used for comparison.</p>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Model R2</span>
+          <strong class="metric-value" id="metricR2">0.000</strong>
+          <p class="metric-note">Goodness-of-fit on this sample.</p>
+        </article>
+      </section>
+
+      <section class="panel visual-panel">
+        <div class="tabs" role="tablist" aria-label="Project views">
+          <button class="tab-button is-active" data-tab="chart" role="tab">
+            Prediction View
+          </button>
+          <button class="tab-button" data-tab="data" role="tab">Dataset</button>
+          <button class="tab-button" data-tab="notes" role="tab">
+            Project Notes
+          </button>
+        </div>
+
+        <div class="tab-panel is-active" data-panel="chart" role="tabpanel">
+          <div class="chart-layout">
+            <div class="chart-card">
+              <div class="panel-heading">
+                <p class="panel-kicker">Visualization</p>
+                <h2>Projected startup cost by annual revenue</h2>
+              </div>
+              <svg id="chart" viewBox="0 0 860 420" aria-label="Regression chart"></svg>
+            </div>
+
+            <aside class="detail-card">
+              <div class="panel-heading">
+                <p class="panel-kicker">Model Details</p>
+                <h2>Regression summary</h2>
+              </div>
+              <dl class="details-list">
+                <div>
+                  <dt>Coefficient</dt>
+                  <dd id="coefficientValue">0.0000</dd>
+                </div>
+                <div>
+                  <dt>Intercept</dt>
+                  <dd id="interceptValue">0.0000</dd>
+                </div>
+              </dl>
+              <p class="detail-text">
+                Higher annual revenue tends to be associated with higher startup cost
+                in this sample. The highlighted point shows the current simulated case.
+              </p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="data" role="tabpanel" hidden>
+          <div class="table-shell">
+            <table>
+              <thead>
+                <tr>
+                  <th>Annual Revenue</th>
+                  <th>Initial Cost</th>
+                </tr>
+              </thead>
+              <tbody id="datasetBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="tab-panel" data-panel="notes" role="tabpanel" hidden>
+          <div class="notes-grid">
+            <article class="note-card">
+              <h3>Why this works in a portfolio</h3>
+              <p>
+                This demo shows the full path from data to interface: ingesting a
+                structured sample, calculating a regression model, exposing inputs,
+                and presenting a clean business-oriented output.
+              </p>
+            </article>
+            <article class="note-card">
+              <h3>Why HTML helps here</h3>
+              <p>
+                A static frontend is easier to publish on GitHub Pages, easier to
+                embed into a portfolio site, and removes the operational overhead of
+                a Python runtime for a simple showcase project.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabric Ops Analytics Platform | Case Study</title>
+  <style>
+    :root {
+      --bg: #f3efe7;
+      --surface: rgba(255, 252, 247, 0.92);
+      --ink: #182738;
+      --muted: #607081;
+      --line: rgba(32, 44, 58, 0.12);
+      --blue: #245c8d;
+      --teal: #1d876d;
+      --shadow: 0 24px 64px rgba(18, 36, 55, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(36, 92, 141, 0.12), transparent 24%),
+        linear-gradient(180deg, #ebdecc 0%, var(--bg) 56%, #f8f2ea 100%);
+      line-height: 1.65;
+    }
+    main { width: min(920px, calc(100% - 32px)); margin: 28px auto 44px; }
+    .hero, .block { border-radius: 28px; box-shadow: var(--shadow); }
+    .hero {
+      padding: 32px;
+      background: linear-gradient(135deg, #17324d, #245c8d 55%, #1d876d);
+      color: #f8fbff;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #ffd89e;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    h1, h2, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+      line-height: 1.08;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .button-primary {
+      background: #f6f1e8;
+      color: #17324d;
+    }
+    .button-secondary {
+      color: #f6f1e8;
+      border: 1px solid rgba(246, 241, 232, 0.28);
+    }
+    .flow { display: grid; gap: 18px; margin-top: 18px; }
+    .block {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    h2 { margin-bottom: 8px; font-size: 1.32rem; }
+    ul { margin: 0; padding-left: 18px; }
+    li + li { margin-top: 8px; }
+    .result { border-left: 5px solid var(--teal); }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Case Study</p>
+      <h1>Fabric Ops Analytics Platform</h1>
+      <p>
+        A compact operations analytics platform designed to show how fragmented service and maintenance data
+        can be converted into reliable, multi-site KPI reporting.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="../outputs/dashboard.html">Open dashboard</a>
+        <a class="button button-secondary" href="../../index.html#projects">Back to portfolio</a>
+      </div>
+    </section>
+
+    <section class="flow">
+      <article class="block">
+        <h2>Situation</h2>
+        <p class="muted">
+          Operations leaders receive fragmented exports from service systems, technician schedules, downtime logs, and cost trackers.
+          Because the data is disconnected and inconsistent, backlog and SLA risk are difficult to monitor in time.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Task</h2>
+        <p class="muted">
+          Build a compact but realistic analytics platform that ingests raw operational files, validates them,
+          models Bronze, Silver, and Gold layers, and produces a leadership-ready operations scorecard.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Action</h2>
+        <ul>
+          <li>Generated synthetic multi-site operations data with intentional quality issues.</li>
+          <li>Loaded source extracts into Bronze tables without heavy assumptions.</li>
+          <li>Standardized dimensions and business rules in Silver tables.</li>
+          <li>Modeled Gold summaries for site performance, technician capacity, backlog by priority, and executive KPIs.</li>
+          <li>Published a static HTML dashboard designed for recruiter and hiring manager review.</li>
+        </ul>
+      </article>
+
+      <article class="block result">
+        <h2>Result</h2>
+        <p class="muted">
+          The final output makes it possible to spot SLA risk, backlog concentration, overloaded sites,
+          and downtime cost exposure without manually reconciling source files.
+        </p>
+      </article>
+
+      <article class="block">
+        <h2>Stack</h2>
+        <p class="muted">
+          Python, SQL, SQLite, medallion architecture, operations analytics, data quality checks, and HTML/CSS reporting.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

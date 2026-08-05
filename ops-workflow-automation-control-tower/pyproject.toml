@@ -1,0 +1,5 @@
+[project]
+name = "ops-workflow-automation-control-tower"
+version = "0.1.0"
+description = "Portfolio scaffold for operational workflow automation with validation controls."
+requires-python = ">=3.11"

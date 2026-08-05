@@ -1,0 +1,6 @@
+update_batch,record_id,site,team,owner_name,workstream,status,backlog_count,completed_today,blocked_count,sla_risk,target_date,blocker_reason
+2026-08-04-AM,PL-2001,Campinas,Planning,Rafael Sousa,scheduling,in_progress,18,4,0,medium,2026-08-06,
+2026-08-04-AM,PL-2002,Paulinia,Planning,Marina Alves,capacity_planning,in_progress,16,2,1,high,2026-08-05,resource_gap
+2026-08-04-AM,PL-2003,Macae,Planning,Thiago Reis,scheduling,completed,8,6,0,low,2026-08-04,
+2026-08-04-AM,PL-2004,Vitoria,Planning,Juliana Martins,backlog_review,blocked,10,1,2,high,2026-08-05,dependency_pending
+2026-08-04-AM,PL-2005,Curitiba,Planning,Pedro Araujo,scheduling,in_progress,12,3,0,medium,2026-08-07,
