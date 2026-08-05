@@ -1,0 +1,29 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="36" fill="#F4EEE4"/>
+  <rect x="34" y="34" width="1132" height="712" rx="30" fill="#4E5A67"/>
+  <rect x="74" y="76" width="320" height="148" rx="24" fill="#FFF8EE"/>
+  <rect x="416" y="76" width="320" height="148" rx="24" fill="#FFF8EE"/>
+  <rect x="758" y="76" width="368" height="148" rx="24" fill="#FFF8EE"/>
+  <rect x="74" y="256" width="512" height="198" rx="24" fill="#FFF9F2"/>
+  <rect x="608" y="256" width="518" height="198" rx="24" fill="#FFF9F2"/>
+  <rect x="74" y="484" width="1052" height="198" rx="24" fill="#FFF9F2"/>
+  <text x="96" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Headcount</text>
+  <text x="96" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">482</text>
+  <text x="96" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">active employees</text>
+  <text x="438" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Absence Rate</text>
+  <text x="438" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">3.9%</text>
+  <text x="438" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">monthly trend</text>
+  <text x="780" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Workforce Themes</text>
+  <text x="780" y="162" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">contracts, onboarding, attendance, work schedule</text>
+  <text x="96" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Attendance Pattern</text>
+  <path d="M114 398C183 356 224 344 289 348C357 352 404 388 471 352C516 328 548 300 566 286" stroke="#0F6C5C" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="564" cy="286" r="12" fill="#CF6C2F"/>
+  <text x="630" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Workforce Mix</text>
+  <circle cx="796" cy="364" r="74" fill="#0F6C5C"/>
+  <path d="M796 290A74 74 0 0 1 858 405L796 364V290Z" fill="#CF6C2F"/>
+  <path d="M858 405A74 74 0 0 1 738 414L796 364L858 405Z" fill="#D6DDD4"/>
+  <text x="96" y="528" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Portfolio Role</text>
+  <text x="96" y="572" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• broadens the domain range of the portfolio</text>
+  <text x="96" y="604" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• shows comfort with internal KPI storytelling</text>
+  <text x="96" y="636" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• best used as a complementary third Power BI case</text>
+</svg>

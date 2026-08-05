@@ -40,6 +40,14 @@ Highlights:
 - exception queue and validation layer
 - reporting-ready exports and dashboard summary
 
+### Power BI Portfolio Cases
+
+Three Power BI case pages that package dashboard work into recruiter-friendly portfolio stories:
+
+- Sales vs Target
+- OTIF Logistics Dashboard
+- People Analytics
+
 ## Repository Structure
 
 - `index.html` - main portfolio homepage
@@ -48,6 +56,9 @@ Highlights:
 - `fabric-ops-analytics-platform/` - Fabric-aligned operations analytics case
 - `document-ai-ops-intake/` - document automation case
 - `ops-workflow-automation-control-tower/` - next automation-focused case scaffold
+- `powerbi-sales-vs-target/` - commercial performance Power BI case
+- `powerbi-otif-logistics/` - OTIF and logistics Power BI case
+- `powerbi-people-analytics/` - workforce reporting Power BI case
 - `og.png` - social sharing preview image
 
 ## Notes

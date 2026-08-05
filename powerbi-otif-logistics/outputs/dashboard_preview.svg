@@ -1,0 +1,41 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="36" fill="#F7EFE2"/>
+  <rect x="34" y="34" width="1132" height="712" rx="30" fill="#163A45"/>
+  <rect x="74" y="76" width="236" height="148" rx="24" fill="#FFF7EC"/>
+  <rect x="332" y="76" width="236" height="148" rx="24" fill="#FFF7EC"/>
+  <rect x="590" y="76" width="236" height="148" rx="24" fill="#FFF7EC"/>
+  <rect x="848" y="76" width="278" height="148" rx="24" fill="#FFF7EC"/>
+  <rect x="74" y="256" width="512" height="212" rx="24" fill="#FFF9F1"/>
+  <rect x="608" y="256" width="518" height="212" rx="24" fill="#FFF9F1"/>
+  <rect x="74" y="498" width="1052" height="184" rx="24" fill="#FFF9F1"/>
+  <text x="96" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">OTIF</text>
+  <text x="96" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">91.2%</text>
+  <text x="96" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">on-time in-full rate</text>
+  <text x="354" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Orders</text>
+  <text x="354" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">18,420</text>
+  <text x="354" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">tracked deliveries</text>
+  <text x="612" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Late Shipments</text>
+  <text x="612" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">1,118</text>
+  <text x="612" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">focus queue</text>
+  <text x="870" y="116" fill="#A5683A" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Inventory Signal</text>
+  <text x="870" y="168" fill="#17342F" font-family="Georgia, serif" font-size="42" font-weight="700">7 sites</text>
+  <text x="870" y="198" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">with stock pressure indicators</text>
+  <text x="96" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Order Flow by Week</text>
+  <rect x="116" y="386" width="42" height="44" rx="8" fill="#D7EADF"/>
+  <rect x="184" y="358" width="42" height="72" rx="8" fill="#B8D8C2"/>
+  <rect x="252" y="336" width="42" height="94" rx="8" fill="#8CC6B1"/>
+  <rect x="320" y="304" width="42" height="126" rx="8" fill="#60B09A"/>
+  <rect x="388" y="278" width="42" height="152" rx="8" fill="#0F6C5C"/>
+  <rect x="456" y="322" width="42" height="108" rx="8" fill="#CF6C2F"/>
+  <text x="630" y="296" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Delay Drivers</text>
+  <rect x="650" y="334" width="356" height="24" rx="12" fill="#0F6C5C"/>
+  <rect x="650" y="376" width="280" height="24" rx="12" fill="#CF6C2F"/>
+  <rect x="650" y="418" width="214" height="24" rx="12" fill="#C9D0C7"/>
+  <text x="650" y="328" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">warehouse congestion</text>
+  <text x="650" y="370" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">supplier delay</text>
+  <text x="650" y="412" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="16">dispatch cutoff miss</text>
+  <text x="96" y="542" fill="#17342F" font-family="Georgia, serif" font-size="28" font-weight="700">Operational Story</text>
+  <text x="96" y="586" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• connects timeliness, order volume, and inventory pressure</text>
+  <text x="96" y="618" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• feels closer to real supply-chain decision-making</text>
+  <text x="96" y="650" fill="#59615D" font-family="Segoe UI, Arial, sans-serif" font-size="18">• strong example of operations-aware Power BI work</text>
+</svg>
