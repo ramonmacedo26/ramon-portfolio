@@ -24,4 +24,4 @@ It is positioned as a business analytics case rather than a raw dashboard file d
 ## Public Entry Points
 
 - `outputs/index.html` - static case page for the portfolio site
-- `outputs/dashboard_preview.svg` - visual preview used on the homepage
+- `source/Sales vs Target.pbix` - original Power BI Desktop file for download

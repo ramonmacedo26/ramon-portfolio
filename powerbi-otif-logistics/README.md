@@ -24,4 +24,4 @@ The public portfolio version focuses on the use case, KPI structure, and operati
 ## Public Entry Points
 
 - `outputs/index.html` - static case page for the portfolio site
-- `outputs/dashboard_preview.svg` - visual preview used on the homepage
+- `source/Dashboard Logistica (OTIF).pbix` - original Power BI Desktop file for download

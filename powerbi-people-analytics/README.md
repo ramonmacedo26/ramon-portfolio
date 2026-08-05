@@ -22,4 +22,4 @@ This case translates HR and workforce indicators into a compact Power BI narrati
 ## Public Entry Points
 
 - `outputs/index.html` - static case page for the portfolio site
-- `outputs/dashboard_preview.svg` - visual preview used on the homepage
+- `source/People Analytics.pbix` - original Power BI Desktop file for download
